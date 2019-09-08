@@ -1,0 +1,13 @@
+CHANGES
+README
+MANIFEST
+install.rb
+win32-sapi.gemspec
+
+doc/sapi5.txt
+
+examples/sapi5_test.rb
+
+lib/win32/sapi5.rb
+
+test/tc_sapi5.rb

@@ -1,0 +1,40 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;9.&nbsp;To-do list</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.68.1"><link rel="start" href="book.html" title="Developing Graphical User Interfaces with FXRuby"><link rel="up" href="pt01.html" title="Part&nbsp;I.&nbsp;The Basics"><link rel="prev" href="events.html" title="Chapter&nbsp;8.&nbsp;FXRuby's Message-Target System"><link rel="next" href="infosources.html" title="Chapter&nbsp;10.&nbsp;Other Sources of Information"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;9.&nbsp;To-do list</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="events.html">Prev</a>&nbsp;</td><th width="60%" align="center">Part&nbsp;I.&nbsp;The Basics</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="infosources.html">Next</a></td></tr></table><hr></div><div class="chapter" lang="en"><div class="titlepage"><div><div><h2 class="title"><a name="todo"></a>Chapter&nbsp;9.&nbsp;To-do list</h2></div></div></div><div class="itemizedlist"><ul type="bullet"><li style="list-style-type: disc"><p>I haven't yet paid much attention to some of the more esoteric
+      issues such as multithreaded applications, or interactions with other
+      popular Ruby extensions. FXRuby seems to cooperate well with Ruby's
+      thread scheduler on all platforms, although threading support for the
+      mswin32 build of Ruby was broken for Ruby versions 1.6.7 and earlier.
+      For best results, use Ruby versions 1.6.8 or later.</p></li><li style="list-style-type: disc"><p>More examples are always good. Instead of (or in addition to)
+      merely cloning the C++ examples from the standard FOX distribution, it
+      would be nice to have original example programs that demonstrate
+      Ruby's special strengths.</p></li><li style="list-style-type: disc"><p>Documentation is of course a big weakness at this point. I am
+      slowly building up a set of "pseudo-sources" with RDoc-style
+      comments that can be used to generate API documentation but this is far
+      from complete (see the <code class="filename">rdoc-sources</code>
+      directory in the standard source distribution).</p></li><li style="list-style-type: disc"><p>Many people have expressed interest in a framework similar to
+      Tk's <code class="classname">Canvas</code> widget that allows you to draw
+      and drag 2-D shapes around, etc. Should be able to implement this kind
+      of thing directly in Ruby code (i.e. no need to write it in C++ first
+      and then "wrap" it).</p></li><li style="list-style-type: disc"><p>There is no native Mac OS X port of FOX, but many people are
+      successfully building and running FOX and FXRuby applications on Mac OS
+      X using Apple's X11 server implementation. For more information,
+      please see the <a href="http://www.fox-toolkit.net/cgi-bin/wiki.pl?Mac_OS_X" target="_top">Mac OS X</a>
+      page at the <a href="http://www.fox-toolkit.net" target="_top">FOX Community Wiki</a>
+      site.</p></li><li style="list-style-type: disc"><p>Need to investigate how well FXRuby-based applications work with
+      <a href="http://exerb.sourceforge.jp/index.en.html" target="_top">exerb</a>,
+      and perhaps add a section to the documentation about how to do this.</p></li><li style="list-style-type: disc"><p>As of this writing, FOX doesn't provide any support for
+      internationalization (I18N) or Unicode text and so FXRuby doesn't
+      either. It is possible that FOX 1.2 will include some I18N support (see
+      the <a href="http://www.fox-toolkit.net/cgi-bin/wiki.pl?FAQ" target="_top">FAQ</a>
+      at the <a href="http://www.fox-toolkit.net" target="_top">FOX Community Wiki</a>
+      site), and if so, appropriate changes will be made to FXRuby at that
+      time.</p></li><li style="list-style-type: disc"><p>FOX's list-like widgets (such as <code class="classname">FXList</code>)
+      behave differently from Ruby container objects (such as
+      <code class="classname">Array</code>) in the sense that when a list widget is
+      destroyed, it typically destroys all of its contained items at the same
+      time. One consequence of this behavior is that you can end up with Ruby
+      objects that refer to dead C++ objects (a variation of the dangling
+      pointer problem familiar to C/C++ programmers). I would like to see if
+      this behavior can be modified for FXRuby so that it's impossible to
+      end up with these "dangling references".</p></li></ul></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="events.html">Prev</a>&nbsp;</td><td width="20%" align="center"><a accesskey="u" href="pt01.html">Up</a></td><td width="40%" align="right">&nbsp;<a accesskey="n" href="infosources.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;8.&nbsp;FXRuby's Message-Target System&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="book.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;10.&nbsp;Other Sources of Information</td></tr></table></div></body></html>

@@ -1,0 +1,10 @@
+<coolgdbconfig>
+<tcpserverport>0x66DB</tcpserverport>
+<chipname>8810</chipname>
+<eventnumber>0x9db00000</eventnumber>
+<spcontextaddress>0x01C00120</spcontextaddress>
+<debugirqregaddress>0x01A01010</debugirqregaddress>
+<debugirqvalue>0x00004000</debugirqvalue>
+<jadecoolhost>false</jadecoolhost>
+<flowmode>2</flowmode>
+</coolgdbconfig>

@@ -1,0 +1,45 @@
+#!/usr/bin/bash -f
+
+# the following environment variable must be defined before sourcing this file
+# GPRS_PROJ_ROOT
+
+if [ "x$1" != "x" ] || [ "x$PROJ" != "x" ]; then
+	skip_cd=0
+	if [ "x$1" = "x" ] || [ "x$PROJ" = "x$1" ]; then
+		skip_cd=1
+	fi
+
+	if [ "x$1" != "x" ]; then
+		if [ "x$OSTYPE" = "xcygwin" ]; then
+			# Set the TERM to cygwin (needed by ncurses tool like cgdb)
+			export TERM=cygwin
+		fi
+
+		# Project name
+		export PROJ=$1
+
+		export PROJ_WORKDIR=$GPRS_PROJ_ROOT/$PROJ
+		PROJ_WORKDIR_OLD=$GPRS_PROJ_ROOT_OLD/$PROJ
+
+		if [ ! -d "$PROJ_WORKDIR" ] && [ -d "$PROJ_WORKDIR_OLD" ]; then
+			PROJ_WORKDIR=$GPRS_PROJ_ROOT_OLD
+		fi
+
+		# Soft directory location
+		export SOFT_WORKDIR=$PROJ_WORKDIR
+
+		# SVN server database location
+		#export SVN_SOFT_REPOS=http://subversion-server/svn/developing
+	fi
+
+	# Soft environment setup
+	if [ -f ${SOFT_WORKDIR}/env/set_env.sh ]; then
+		source ${SOFT_WORKDIR}/env/set_env.sh
+	fi
+
+	if [ $skip_cd != 1 ]; then
+		cd $SOFT_WORKDIR
+		echo Project Switched to $PROJ
+	fi
+fi
+

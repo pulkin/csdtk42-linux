@@ -1,0 +1,116 @@
+<collection elfdump="8909">
+<sram title="SYS DEC">
+   <base>0x01a00000</base>
+   <size>0x34000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="GOUDA_SRAM">
+   <base>0x01a38000</base>
+   <size>0x2e40</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="USBC">
+   <base>0x01a40000</base>
+   <size>0x1000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="VOC">
+   <base>0x01a80000</base>
+   <size>0x40000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="BB APB">
+   <base>0x01900000</base>
+   <size>0x1b000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="CIPHER_A53">
+   <base>0x01920000</base>
+   <size>0x1000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="pulp_irq">
+   <base>0x088000</base>
+   <size>0x10</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="pulp_slp">
+   <base>0x08c000</base>
+   <size>0x8</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="RF_RAM">
+   <base>0x000000</base>
+   <size>0x6000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="RF_Dig">
+   <base>0x030000</base>
+   <size>0xd000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="AUD IFC AIF CODEC">
+   <base>0x01980000</base>
+   <size>0x3000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="internal sram">
+   <base>0x01c00000</base>
+   <size>0x10000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bb sram">
+   <base>0x01d00000</base>
+   <size>0x20000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="NB ram">
+   <base>0x01d80000</base>
+   <size>0x10000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="Mail Box">
+   <base>0x01b00000</base>
+   <size>0x800</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="external sram">
+   <base>0x82000000</base>
+   <size>0x400000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="internal rom">
+   <base>0x81e00000</base>
+   <size>0xA000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bcpu rom">
+   <base>0x81e80000</base>
+   <size>0x20000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="flash">
+   <base>0x88000000</base>
+   <size>0x400000</size>
+   <skip>1</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+</collection>

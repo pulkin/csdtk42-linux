@@ -1,0 +1,35 @@
+$Id: README.windows,v 1.2 2003/03/22 20:00:59 t-peters Exp $
+------------------------------------------------------------------------
+
+Ncurses has been ported to the cygwin environment.  If you are using the
+cygwin version of ruby on windows, you can simply use this version of
+ncurses.
+
+Instead, if you are using a native windows version of Ruby (compiled with
+mingw, visual c++, borland c++), then you can use this wrapper with the
+PDCurses library (http://pdcurses.sourceforge.net/). In this case,
+ncurses-ruby wraps the subset of curses features that are common to ncurses
+and PDCurses.
+
+Here's how to compile ncurses-ruby on windows using PDCurses and MinGW:
+(For those not familiar enough with the mingw compiler, you can get a
+ precompiled mingw ruby from
+ http://www.ruby-lang.org/~eban/ruby/binaries/mingw/, and a precompiled
+ ncurses-ruby version from this project's download area
+ http://developer.berlios.de/project/filelist.php?group_id=273)
+
+- compile ruby with mingw 2.0 and install it somewhere. remember to set up
+  the PATH environment correctly.
+
+- get the sources for PDCurses and compile them using the provided Makefile
+  "win32/mingwin32.mak"
+
+- next, move the pdcurses header files ("curses.h", "panel.h") into mingw's
+  include directory. Also, move the generated libraries ("pdcurses.a",
+  "panel.a") into mingw's lib directory, while renaming these libraries to
+  "libpdcurses.a" and "libpanel.a"
+
+- compile and install ncurses-ruby using the commands "ruby extconf.rb",
+  "make", "make install"
+
+- try out the examples

@@ -1,0 +1,684 @@
+\form#0:$n$
+\form#1:$ \Rset^n $
+\form#2:$0 \geq 2$
+\form#3:$0 \leq 2$
+\form#4:$x \leq 2$
+\form#5:$x - y \leq 2$
+\form#6:$x + y \leq 2$
+\form#7:$x = 2$
+\form#8:$x - 3y \leq 2$
+\form#9:$x - 3y < 2$
+\form#10:$0 \equiv_2 1$
+\form#11:$0 \equiv_2 2$
+\form#12:$x + 3y \equiv_0 0$
+\form#13:$x + 3y \equiv_5 0$
+\form#14:$2x \leq 5$
+\form#15:$x \leq 3$
+\form#16:$\Rset^n$
+\form#17:$\Rset$
+\form#18:$\nonnegRset$
+\form#19:$i \in \{0, \ldots, n-1\}$
+\form#20:$v_i$
+\form#21:$i$
+\form#22:$\vect{v} = (v_0, \ldots, v_{n-1})^\transpose \in \Rset^n$
+\form#23:$\vect{0}$
+\form#24:$\vect{v} \in \Rset^n$
+\form#25:$\Rset^{n \times 1}$
+\form#26:$\vect{v}^\transpose$
+\form#27:$\vect{v},\vect{w} \in \Rset^n$
+\form#28:$\langle \vect{v}, \vect{w} \rangle$
+\form#29:\[ \vect{v}^\transpose \vect{w} = \sum_{i=0}^{n-1} v_i w_i. \]
+\form#30:$S_1, S_2 \sseq \Rset^n$
+\form#31:$S_1$
+\form#32:$S_2$
+\form#33:$S_1 + S_2 = \{\, \vect{v}_1 + \vect{v}_2 \mid \vect{v}_1 \in S_1, \vect{v}_2 \in S_2 \,\}.$
+\form#34:$\vect{a} \in \Rset^n$
+\form#35:$b \in \Rset$
+\form#36:$\vect{a} \neq \vect{0}$
+\form#37:$\mathord{\relsym} \in \{ =, \geq, > \}$
+\form#38:$\langle \vect{a}, \vect{x} \rangle \relsym b$
+\form#39:$\mathord{\relsym} \in \{ = \}$
+\form#40:$\mathord{\relsym} \in \{ \geq \}$
+\form#41:$\mathord{\relsym} \in \{ > \}$
+\form#42:$\langle \vect{a}, \vect{x} \rangle = b$
+\form#43:$\langle \vect{a}, \vect{x} \rangle \geq b$
+\form#44:$\langle -\vect{a}, \vect{x} \rangle \geq -b$
+\form#45:$\vect{a} = \vect{0}$
+\form#46:$\langle \vect{0}, \vect{x} \rangle \relsym b$
+\form#47:$\emptyset$
+\form#48:$\cP \sseq \Rset^n$
+\form#49:$\cP$
+\form#50:$n = 0$
+\form#51:$\cP = \emptyset$
+\form#52:$\Pset_n$
+\form#53:$\cP \in \Pset_n$
+\form#54:$\CPset_n$
+\form#55:$\lambda \in \nonnegRset$
+\form#56:\[ \cP \sseq \bigl\{\, \vect{x} \in \Rset^n \bigm| - \lambda \leq x_j \leq \lambda \text{ for } j = 0, \ldots, n-1 \,\bigr\}. \]
+\form#57:\[ \cP \defeq \{\, \vect{x} \in \Rset^n \mid A_1 \vect{x} = \vect{b}_1, A_2 \vect{x} \geq \vect{b}_2, A_3 \vect{x} > \vect{b}_3 \,\}, \]
+\form#58:$i \in \{1, 2, 3\}$
+\form#59:$A_i \in \Rset^{m_i} \times \Rset^n$
+\form#60:$\vect{b}_i \in \Rset^{m_i}$
+\form#61:$m_1, m_2, m_3 \in \Nset$
+\form#62:$S = \{ \vect{x}_1, \ldots, \vect{x}_k \} \sseq \Rset^n$
+\form#63:$\lambda_1, \ldots, \lambda_k \in \Rset$
+\form#64:$\vect{v} = \sum_{j=1}^k \lambda_j \vect{x}_j$
+\form#65:$S$
+\form#66:$\forall j \in \{ 1, \ldots, k \} \itc \lambda_j \in \nonnegRset$
+\form#67:$\sum_{j = 1}^k \lambda_j = 1$
+\form#68:$\linearhull(S)$
+\form#69:$\conichull(S)$
+\form#70:$\affinehull(S)$
+\form#71:$\convexhull(S)$
+\form#72:$P, C \sseq \Rset^n$
+\form#73:$P \union C = S$
+\form#74:$\NNChull(P, C)$
+\form#75:$\lambda_j > 0$
+\form#76:$\vect{x}_j \in P$
+\form#77:$P$
+\form#78:$\NNChull(P, C) = \NNChull(P, P \union C)$
+\form#79:$C \sseq P$
+\form#80:\[ \convexhull(P) = \NNChull(P, \emptyset) = \NNChull(P, P) = \NNChull(P, C). \]
+\form#81:$\vect{p} \in \cP$
+\form#82:$\vect{c} \in \Rset^n$
+\form#83:$\vect{r} \in \Rset^n$
+\form#84:$\vect{r} \neq \vect{0}$
+\form#85:$\cP \neq \emptyset$
+\form#86:$\vect{p} + \lambda \vect{r} \in \cP$
+\form#87:$\vect{l} \in \Rset^n$
+\form#88:$\vect{l}$
+\form#89:$-\vect{l}$
+\form#90:$\vect{r}$
+\form#91:$\vect{r}_1$
+\form#92:$\vect{r}_2$
+\form#93:$\vect{r} \neq \lambda \vect{r}_1$
+\form#94:$\vect{r} \neq \lambda \vect{r}_2$
+\form#95:$\vect{r}_1 \neq \lambda \vect{r}_2$
+\form#96:$L$
+\form#97:$R$
+\form#98:$C$
+\form#99:$\cG = (L, R, P, C)$
+\form#100:\[ \cP = \linearhull(L) + \conichull(R) + \NNChull(P, C), \]
+\form#101:$+$
+\form#102:$\cP \in \CPset_n$
+\form#103:$\cG = (L, R, P)$
+\form#104:\[ \cP = \linearhull(L) + \conichull(R) + \convexhull(P). \]
+\form#105:$P = \emptyset$
+\form#106:$\Rset^2$
+\form#107:$y \geq 0$
+\form#108:$L = \bigl\{ (1, 0)^\transpose \bigr\}$
+\form#109:$R = \bigl\{ (0, 1)^\transpose \bigr\}$
+\form#110:$P = \bigl\{ (0, 0)^\transpose \bigr\}$
+\form#111:$C = \emptyset$
+\form#112:$\cC$
+\form#113:$\cG' = (L', R', P', C') \neq \cG$
+\form#114:$L' \sseq L$
+\form#115:$R' \sseq R$
+\form#116:$P' \sseq P$
+\form#117:$C' \sseq C$
+\form#118:$\cG$
+\form#119:$(\cC, \cG)$
+\form#120:$(L, R, P)$
+\form#121:$n \in \Nset$
+\form#122:$\vect{a}, \vect{x} \in \Rset^m$
+\form#123:$m \leq n$
+\form#124:$\vect{x} \in \Rset^m$
+\form#125:$\{ \vect{x}_1, \ldots, \vect{x}_k \} \sseq \Rset^n$
+\form#126:\[ \sum_{i = 1}^k \lambda_i \vect{x}_i = \vect{0}, \quad \sum_{i = 1}^k \lambda_i = 0 \]
+\form#127:$i = 1, \ldots, k$
+\form#128:$\lambda_i = 0$
+\form#129:$n + 1$
+\form#130:$k \in \Nset$
+\form#131:$\pdim(\cP) = k$
+\form#132:$k + 1$
+\form#133:$0 \leq \pdim(\cP) \leq n$
+\form#134:$-1$
+\form#135:$k \leq n$
+\form#136:$\pdim(\cP) \neq \pdim(\cQ)$
+\form#137:$\cQ$
+\form#138:$\pdim(\cP) = \pdim(\cQ)$
+\form#139:$\cP_1, \cP_2 \in \Pset_n$
+\form#140:$\cP_1$
+\form#141:$\cP_2$
+\form#142:$\cP_1 \inters \cP_2$
+\form#143:$\cP_1 \uplus \cP_2$
+\form#144:$\cP_1, \cP_2 \in \CPset_n$
+\form#145:$\cQ \in \Pset_m$
+\form#146:$\cR \in \Pset_{n+m}$
+\form#147:\[ \cR \defeq \Bigl\{\, (x_0, \ldots, x_{n-1}, y_0, \ldots, y_{m-1})^\transpose \in \Rset^{n+m} \Bigm| (x_0, \ldots, x_{n-1})^\transpose \in \cP, (y_0, \ldots, y_{m-1})^\transpose \in \cQ \,\Bigl\}. \]
+\form#148:$n+m$
+\form#149:$\cQ \in \Pset_{n+i}$
+\form#150:$i+n$
+\form#151:$\cP \sseq \Rset^2$
+\form#152:\[ \cQ = \bigl\{\, (x_0, x_1, x_2)^\transpose \in \Rset^3 \bigm| (x_0, x_1)^\transpose \in \cP \,\bigr\}. \]
+\form#153:\[ \cQ = \bigl\{\, (x_0, x_1, 0)^\transpose \in \Rset^3 \bigm| (x_0, x_1)^\transpose \in \cP \,\bigr\}. \]
+\form#154:$\cP \in \Pset_4$
+\form#155:$\bigl\{ (3, 1, 0, 2)^\transpose \bigr\} \sseq \Rset^4$
+\form#156:$\{x_1, x_2\}$
+\form#157:\[ \cQ = \bigl\{ (3, 2)^\transpose \bigr\} \sseq \Rset^2. \]
+\form#158:$m$
+\form#159:$m = 2$
+\form#160:\[ \cQ = \bigl\{ (3, 1)^\transpose \bigr\} \sseq \Rset^2. \]
+\form#161:$\pard{\rho}{\{0, \ldots, n-1\}}{\Nset}$
+\form#162:$\rho\bigl(\{0, \ldots, n-1\}\bigr) = \{0, \ldots, m-1\}$
+\form#163:$\rho$
+\form#164:$m = 0$
+\form#165:$\Rset^0$
+\form#166:\[ \cQ \defeq \Bigl\{\, \bigl(v_{\rho^{-1}(0)}, \ldots, v_{\rho^{-1}(m-1)}\bigr)^\transpose \Bigm| (v_0, \ldots, v_{n-1})^\transpose \in \cP \,\Bigr\}. \]
+\form#167:$n > 0$
+\form#168:$n+1$
+\form#169:$\ldots$
+\form#170:$n+m-1$
+\form#171:\[ \cQ \defeq \sset{ \vect{u} \in \Rset^{n+m} }{ \exists \vect{v}, \vect{w} \in \cP \st u_i = v_i \\ \qquad \mathord{} \land \forall j = n, n+1, \ldots, n+m-1 \itc u_j = w_i \\ \qquad \mathord{} \land \forall k = 0, \ldots, n-1 \itc k \neq i \implies u_k = v_k = w_k }. \]
+\form#172:$J = \{ j_0, \ldots, j_{m-1} \}$
+\form#173:$m < n$
+\form#174:$j < n$
+\form#175:$j \in J$
+\form#176:$i < n$
+\form#177:$i \notin J$
+\form#178:\[ \cQ \defeq \biguplus_{d = 0}^m \cQ_d \]
+\form#179:\[ \cQ_m \defeq \sset{ \vect{u} \in \Rset^{n-m} }{ \exists \vect{v} \in \cP \st u_{i'} = v_i \\ \qquad \mathord{} \land \forall k = 0, \ldots, n-1 \itc k \neq i \implies u_{k'} = v_k } \]
+\form#180:$ d = 0 $
+\form#181:$ \ldots $
+\form#182:$ m-1 $
+\form#183:\[ \cQ_d \defeq \sset{ \vect{u} \in \Rset^{n-m} }{ \exists \vect{v} \in \cP \st u_{i'} = v_{j_d} \\ \qquad \mathord{} \land \forall k = 0, \ldots, n-1 \itc k \neq i \implies u_{k'} = v_k }, \]
+\form#184:$ k = 0 $
+\form#185:$ n-1 $
+\form#186:\[ k' \defeq k - \card \{\, j \in J \mid k > j \,\}, \]
+\form#187:$\card S$
+\form#188:$\reld{\phi}{\Rset^n}{\Rset^m}$
+\form#189:$\phi(S) \sseq \Rset^m$
+\form#190:$\phi$
+\form#191:$S \sseq \Rset^n$
+\form#192:\[ \phi(S) \defeq \bigl\{\, \vect{w} \in \Rset^m \bigm| \exists \vect{v} \in S \st (\vect{v}, \vect{w}) \in \phi \,\bigr\}. \]
+\form#193:$\phi^{-1}(S') \sseq \Rset^n$
+\form#194:$S' \sseq \Rset^m$
+\form#195:\[ \phi^{-1}(S') \defeq \bigl\{\, \vect{v} \in \Rset^n \bigm| \exists \vect{w} \in S' \st (\vect{v}, \vect{w}) \in \phi \,\bigr\}. \]
+\form#196:$n = m$
+\form#197:$\ell \in \Nset$
+\form#198:\[ \forall \vect{v} \in \Rset^n, \vect{w} \in \Rset^m \itc (\vect{v}, \vect{w}) \in \phi \iff \bigland_{i=1}^{\ell} \bigl( \langle \vect{c}_i, \vect{w} \rangle \relsym_i \langle \vect{a}_i, \vect{v} \rangle + b_i \bigr), \]
+\form#199:$\vect{a}_i \in \Rset^n$
+\form#200:$\vect{c}_i \in \Rset^m$
+\form#201:$b_i \in \Rset$
+\form#202:$\mathord{\relsym}_i \in \{ <, \leq, =, \geq, > \}$
+\form#203:$i = 1, \ldots, \ell$
+\form#204:$A \in \Rset^m \times \Rset^n$
+\form#205:$\vect{b} \in \Rset^m$
+\form#206:\[ \forall \vect{v} \in \Rset^n, \vect{w} \in \Rset^m \itc (\vect{v}, \vect{w}) \in \phi \iff \vect{w} = A\vect{v} + \vect{b}. \]
+\form#207:$<$
+\form#208:$>$
+\form#209:$\reld{\phi}{\Rset^n}{\Rset^n}$
+\form#210:$\vect{x} = (x_0, \ldots, x_{n-1})^\transpose$
+\form#211:$\vect{x}' = (x'_0, \ldots, x'_{n-1})^\transpose$
+\form#212:$x'_i$
+\form#213:$x'_i = x_i$
+\form#214:$\reld{\phi}{\Rset^3}{\Rset^3}$
+\form#215:$x'_0 - x'_2 \geq 2 x_0 - x_1$
+\form#216:$x'_1$
+\form#217:\[ \forall \vect{v} \in \Rset^3, \vect{w} \in \Rset^3 \itc (\vect{v}, \vect{w}) \in \phi \iff (w_0 - w_2 \geq 2 v_0 - v_1) \land (w_1 = v_1). \]
+\form#218:$x'_0 + 0 \cdot x'_1 - x'_2 \geq 2 x_0 - x_1$
+\form#219:$x'_k$
+\form#220:$\langle \vect{a}, \vect{x} \rangle + b$
+\form#221:$\fund{\phi = \bigl(x'_k = \langle \vect{a}, \vect{x} \rangle + b\bigr)} {\Rset^n}{\Rset^n}$
+\form#222:\[ \forall \vect{v} \in \Rset^n \itc \phi(\vect{v}) = A\vect{v} + \vect{b}, \]
+\form#223:\[ A = \begin{pmatrix} 1 & & 0 & 0 & \cdots & \cdots & 0 \\ & \ddots & & \vdots & & & \vdots \\ 0 & & 1 & 0 & \cdots & \cdots & 0 \\ a_0 & \cdots & a_{k-1} & a_k & a_{k+1} & \cdots & a_{n-1} \\ 0 & \cdots & \cdots & 0 & 1 & & 0 \\ \vdots & & & \vdots & & \ddots & \\ 0 & \cdots & \cdots & 0 & 0 & & 1 \end{pmatrix}, \qquad \vect{b} = \begin{pmatrix} 0 \\ \vdots \\ 0 \\ b \\ 0 \\ \vdots \\ 0 \end{pmatrix} \]
+\form#224:$a_i$
+\form#225:$b$
+\form#226:$(k+1)$
+\form#227:$A$
+\form#228:$\vect{b}$
+\form#229:$(v_0, \ldots, v_{n-1})^\transpose$
+\form#230:\[ \Bigl(v_0, \ldots, \bigl(\textstyle{\sum_{i=0}^{n-1}} a_i v_i + b\bigr), \ldots, v_{n-1}\Bigr)^\transpose. \]
+\form#231:$x'_k = \langle \vect{a}, \vect{x} \rangle + b$
+\form#232:$\bigl\{ (0, 0)^\transpose, (0, 3)^\transpose, (3, 0)^\transpose, (3, 3)^\transpose \bigr\}$
+\form#233:$x_0$
+\form#234:$x_0 + 2 x_1 + 4$
+\form#235:$k = 0$
+\form#236:$a_0 = 1, a_1 = 2, b = 4$
+\form#237:$\bigl\{ (4, 0)^\transpose, (10, 3)^\transpose, (7, 0)^\transpose, (13, 3)^\transpose \bigr\}$
+\form#238:$x_0 - 2 x_1$
+\form#239:$x_1$
+\form#240:$a_0 = 0, a_1 = 1, b = 0$
+\form#241:$(1, 0)^\transpose$
+\form#242:$a_k$
+\form#243:$\mathrm{lb} = \langle \vect{a}, \vect{x} \rangle + b$
+\form#244:$\mathrm{ub} = \langle \vect{c}, \vect{x} \rangle + d$
+\form#245:$\phi = (\mathrm{lb} \leq x'_k \leq \mathrm{ub})$
+\form#246:\[ \forall \vect{v} \in \Rset^n, \vect{w} \in \Rset^n \itc (\vect{v}, \vect{w}) \in \phi \iff \bigl( \langle \vect{a}, \vect{v} \rangle + b \leq w_k \leq \langle \vect{c}, \vect{v} \rangle + d \bigr) \land \Bigl( \bigland_{0 \leq i < n, i \neq k} w_i = v_i \Bigr). \]
+\form#247:$\phi = (\mathrm{lhs}' \relsym \mathrm{rhs})$
+\form#248:$\mathrm{lhs} = \langle \vect{c}, \vect{x} \rangle + d$
+\form#249:$\mathrm{rhs} = \langle \vect{a}, \vect{x} \rangle + b$
+\form#250:$\mathord{\relsym} \in \{ <, \leq, =, \geq, > \}$
+\form#251:\[ \forall \vect{v} \in \Rset^n, \vect{w} \in \Rset^n \itc (\vect{v}, \vect{w}) \in \phi \iff \bigl( \langle \vect{c}, \vect{w} \rangle + d \relsym \langle \vect{a}, \vect{v} \rangle + b \bigr) \land \Bigl( \bigland_{0 \leq i < n, c_i = 0} w_i = v_i \Bigr). \]
+\form#252:$\mathrm{lhs} = x_k$
+\form#253:$x'_k = \mathrm{rhs}$
+\form#254:$\mathrm{lhs}$
+\form#255:$\mathrm{rhs}$
+\form#256:$\mathrm{lhs}' \leq \mathrm{rhs}$
+\form#257:$\mathrm{rhs}' \geq \mathrm{lhs}$
+\form#258:$\cQ \in \Pset_n$
+\form#259:$i \in \{ 0, \ldots, n-1 \}$
+\form#260:\[ \cQ = \bigl\{\, \vect{w} \in \Rset^n \bigm| \exists \vect{v} \in \cP \st \forall j \in \{0, \ldots, n-1\} \itc j \neq i \implies w_j = v_j \,\bigr\}. \]
+\form#261:$\cP, \cQ \in \Pset_n$
+\form#262:$ \cP \nearrow \cQ$
+\form#263:\[ \bigl\{\, \vect{p} + \lambda \vect{q} \in \Rset^n \bigm| \vect{p} \in \cP, \vect{q} \in \cQ, \lambda \in \nonnegRset \,\bigr\}. \]
+\form#264:$\cP,\cQ \in \CPset_n$
+\form#265:$\cP, \cQ, \cR \in \Pset_n$
+\form#266:$\cR$
+\form#267:$\cR \inters \cQ = \cP \inters \cQ$
+\form#268:$\cR \Sseq \cP$
+\form#269:$r \leq p$
+\form#270:$r$
+\form#271:$p$
+\form#272:$ c = \bigl( \langle \vect{a}, \vect{x} \rangle \relsym b \bigr) $
+\form#273:$c$
+\form#274:$\cP \inters \cQ = \emptyset$
+\form#275:$\cP \inters \cQ \neq \emptyset$
+\form#276:$\cP \inters \cQ \subset \cP$
+\form#277:$\cP \sseq \cQ$
+\form#278:$\cP \sseq \cH$
+\form#279:$\cH$
+\form#280:$g$
+\form#281:$\cP \widen \cQ$
+\form#282:$\cP, \cQ \in \CPset_n$
+\form#283:$\cP \Sseq \cP \widen \cQ$
+\form#284:$\cQ \sseq \cP$
+\form#285:$\cP = \cQ$
+\form#286:$k$
+\form#287:$\mathord{\relsym} \in \{ =, \geq, >\}$
+\form#288:$k \in \{ 0, \ldots, i-1, i+1, \ldots, n-1 \}$
+\form#289:$a_k = 0$
+\form#290:$x = r$
+\form#291:$x \leq r$
+\form#292:$x \geq r$
+\form#293:$x < r$
+\form#294:$x > r$
+\form#295:$r \in \Rset$
+\form#296:$\cB$
+\form#297:$\vect{e}_i = (0, \ldots, 1, \ldots, 0)^\transpose$
+\form#298:$\langle \vect{e}_i, \vect{x} \rangle \relsym b$
+\form#299:$\mathord{\relsym}$
+\form#300:$\mathord{\geq}$
+\form#301:$\mathord{>}$
+\form#302:$\langle\vect{e}_i,\vect{x}\rangle \relsym b$
+\form#303:$\mathord{\leq}$
+\form#304:$\mathord{<}$
+\form#305:$\{-2, -1, 0, 1, 2\}$
+\form#306:$\mathord{\relsym} \in \{ =, \geq\}$
+\form#307:$i, j \in \{ 0, \ldots, n-1 \}$
+\form#308:$a_i, a_j \in \{ -1, 0, 1 \}$
+\form#309:$a_i \neq a_j$
+\form#310:$k \notin \{ i, j \}$
+\form#311:$a, b, f \in \Rset$
+\form#312:$a \equiv_f b$
+\form#313:$\exists \mu \in \Zset \st a - b = \mu f$
+\form#314:$\Sset \in \{ \Qset, \Rset \}$
+\form#315:$\vect{a} \in \Sset^n \setdiff \{\vect{0}\}$
+\form#316:$b, f \in \Sset$
+\form#317:$\langle \vect{a}, \vect{x} \rangle \equiv_f b$
+\form#318:$\Sset^n$
+\form#319:\[ \bigl\{\, \vect{v} \in \Rset^n \bigm| \exists \mu \in \Zset \st \langle \vect{a}, \vect{v} \rangle = b + \mu f \,\bigr\}; \]
+\form#320:$f \neq 0$
+\form#321:$\langle \vect{a}, \vect{x} \rangle \equiv_0 b$
+\form#322:$f = 0$
+\form#323:$f$
+\form#324:\[ \big\{\, \bigl(\langle \vect{a}, \vect{x} \rangle = b + \mu f\bigr) \bigm| \mu \in \Zset \,\bigr\}; \]
+\form#325:$b \equiv_f 0$
+\form#326:$\langle \vect{0}, \vect{x} \rangle \equiv_f b$
+\form#327:$\cL \sseq \Rset^n$
+\form#328:$\cL$
+\form#329:$\Qset^n$
+\form#330:$\cL = \emptyset$
+\form#331:$\Gset_{n}$
+\form#332:$\bigl\{\langle\vect{0}, \vect{x}\rangle \equiv_0 1\bigr\}$
+\form#333:$0 = 1$
+\form#334:$\bigl\{\langle\vect{a}, \vect{x}\rangle \equiv_2 0, \langle\vect{a}, \vect{x}\rangle \equiv_2 1\bigr\}$
+\form#335:$\Gset_n$
+\form#336:$\mu_1, \ldots, \mu_k \in \Zset$
+\form#337:$\vect{v} = \sum_{j=1}^k \mu_j \vect{x}_j$
+\form#338:$\inthull(S)$
+\form#339:$\intaffinehull(S)$
+\form#340:$\vect{p} \in \cL$
+\form#341:$\vect{q} \in \Rset^n$
+\form#342:$\vect{q} \neq \vect{0}$
+\form#343:$\cL \neq \emptyset$
+\form#344:$\vect{p} + \mu \vect{q} \in \cL$
+\form#345:$\mu \in \Zset$
+\form#346:$\vect{p} + \lambda \vect{l} \in \cL$
+\form#347:$\lambda \in \Rset$
+\form#348:$L, Q, P$
+\form#349:\[ \cL = \linearhull(L) + \inthull(Q) + \intaffinehull(P) \]
+\form#350:$\cL \in \Gset_n$
+\form#351:$(L, Q, P)$
+\form#352:$\cL = \ggen(L, Q, P)$
+\form#353:$\cL = \ggen(L, Q, P) = \emptyset$
+\form#354:$P \neq \emptyset$
+\form#355:$\cL = \ggen(L, \emptyset, Q_{\vect{p}} \union P)$
+\form#356:$\vect{p} \in P$
+\form#357:$Q_{\vect{p}} = \{\, \vect{p} + \vect{q} \mid \vect{q} \in Q \,\}$
+\form#358:$\cC'$
+\form#359:$\card \cC \leq \card \cC'$
+\form#360:$\cG = (L, Q, P)$
+\form#361:$\cG' = (L', Q', P')$
+\form#362:$\card L \leq \card L'$
+\form#363:$\card Q + \card P \leq \card Q' + \card P'$
+\form#364:$\pdim(\cG) = k$
+\form#365:$0 \leq \pdim(\cG) \leq n$
+\form#366:$\cL_1, \cL_2 \in \Gset_n$
+\form#367:$\cL_1$
+\form#368:$\cL_2$
+\form#369:$\cL_1 \inters \cL_2$
+\form#370:$\cL_1 \uplus \cL_2$
+\form#371:$\cL_1 \in \Gset_n$
+\form#372:$\cL_2 \in \Gset_m$
+\form#373:$\Gset_{n+m}$
+\form#374:\[ \Bigl\{\, (x_0, \ldots, x_{n-1}, y_0, \ldots, y_{m-1})^\transpose \in \Rset^{n+m} \Bigm| (x_0, \ldots, x_{n-1})^\transpose \in \cL_1, (y_0, \ldots, y_{m-1})^\transpose \in \cL_2 \,\Bigl\}. \]
+\form#375:$\Gset_{n+i}$
+\form#376:$\cL \sseq \Rset^2$
+\form#377:\[ \bigl\{\, (x_0, x_1, x_2)^\transpose \in \Rset^3 \bigm| (x_0, x_1)^\transpose \in \cL \,\bigr\}. \]
+\form#378:\[ \bigl\{\, (x_0, x_1, 0)^\transpose \in \Rset^3 \bigm| (x_0, x_1)^\transpose \in \cL \,\bigr\}. \]
+\form#379:$\Gset_m$
+\form#380:\[ \rho\bigl(\{0, \ldots, n-1\}\bigr) = \{0, \ldots, m-1\} \]
+\form#381:\[ \Bigl\{\, \bigl(v_{\rho^{-1}(0)}, \ldots, v_{\rho^{-1}(m-1)}\bigr)^\transpose \Bigm| (v_0, \ldots, v_{n-1})^\transpose \in \cL \,\Bigr\}. \]
+\form#382:\[ \sset{ \vect{u} \in \Rset^{n+m} }{ \exists \vect{v}, \vect{w} \in \cL \st u_i = v_i \\ \qquad \mathord{} \land \forall j = n, n+1, \ldots, n+m-1 \itc u_j = w_i \\ \qquad \mathord{} \land \forall k = 0, \ldots, n-1 \itc k \neq i \implies u_k = v_k = w_k }. \]
+\form#383:$J$
+\form#384:$\{0, \ldots, n-1\}$
+\form#385:$m = \card J$
+\form#386:\[ \cL_0 \uplus \cdots \uplus \cL_m \]
+\form#387:\[ \cL_m \defeq \sset{ \vect{u} \in \Rset^{n-m} }{ \exists \vect{v} \in \cL \st u_{i'} = v_i \\ \qquad \mathord{} \land \forall k = 0, \ldots, n-1 \itc k \neq i \implies u_{k'} = v_k }, \]
+\form#388:\[ \cL_d \defeq \sset{ \vect{u} \in \Rset^{n-m} }{ \exists \vect{v} \in \cL \st u_{i'} = v_{j_d} \\ \qquad \mathord{} \land \forall k = 0, \ldots, n-1 \itc k \neq i \implies u_{k'} = v_k } \]
+\form#389:\[ k' \defeq k - \card \{\, j \in J \mid k > j \,\}. \]
+\form#390:$x_k$
+\form#391:$\mathrm{expr} = \langle \vect{a}, \vect{x} \rangle + b$
+\form#392:$\bigl\{ (0, 0)^\transpose, (0, 3)^\transpose, (3, 0)^\transpose \bigr\}$
+\form#393:$3x_0 + 2 x_1 + 1$
+\form#394:$a_0 = 3, a_1 = 2, b = 1$
+\form#395:$\bigl\{ (1, 0)^\transpose, (7, 3)^\transpose, (10, 0)^\transpose \bigr\}$
+\form#396:$(1, 0)$
+\form#397:$(3, -3), (0, 9)$
+\form#398:$\{x \equiv_3 1, x + y \equiv_9 1\}$
+\form#399:$x = y$
+\form#400:$y$
+\form#401:$\fund{\phi = (\mathrm{lhs}', \mathrm{rhs}, f)}{\Rset^n}{\Rset^n}$
+\form#402:$f \in \Qset$
+\form#403:\[ \forall \vect{v} \in \Rset^n, \vect{w} \in \Rset^n \itc (\vect{v}, \vect{w}) \in \phi \iff \bigl( \langle \vect{c}, \vect{w} \rangle + d \equiv_f \langle \vect{a}, \vect{v} \rangle + b \bigr) \land \Bigl( \bigland_{0 \leq i < n, c_i = 0} w_i = v_i \Bigr). \]
+\form#404:$ \cL_1 \nearrow \cL_2$
+\form#405:\[ \bigl\{\, \vect{p} + \mu \vect{q} \in \Rset^n \bigm| \vect{p} \in \cL_1, \vect{q} \in \cL_2, \mu \in \Zset \,\bigr\}. \]
+\form#406:$ \cg = \bigl( \langle \vect{a}, \vect{x} \rangle \equiv_f b \bigr) $
+\form#407:$\cL_{\cg} = \gcon\bigl(\{\cg\}\bigr)$
+\form#408:$\cg$
+\form#409:$\cL \inters \cL_{\cg} = \emptyset$
+\form#410:$\cL \inters \cL_{\cg} \neq \emptyset$
+\form#411:$\cL \inters \cL_{\cg} \subset \cL$
+\form#412:$\cL \sseq \cL_{\cg}$
+\form#413:$\cL \inters \cQ = \emptyset$
+\form#414:$\cL \inters \cQ \neq \emptyset$
+\form#415:$\cL \inters \cQ \subset \cL$
+\form#416:$\cL \sseq \cQ$
+\form#417:$=$
+\form#418:$\cL_1 \widen \cL_2$
+\form#419:$\cL_1 \sseq \cL_2$
+\form#420:$D$
+\form#421:$\mathord{\entails}$
+\form#422:$\mathord{\meet}$
+\form#423:$\true$
+\form#424:$\false$
+\form#425:$\cS \in \wp(D)$
+\form#426:$\false \notin \cS$
+\form#427:$\forall d_1, d_2 \in \cS \itc d_1 \entails d_2 \implies d_1 = d_2$
+\form#428:$\wpfn{D}{\entails}$
+\form#429:$\fund{\nonredmap}{\wpf(D)}{\wpfn{D}{\entails}}$
+\form#430:$\cS \in \wpf(D)$
+\form#431:\[ \nonredmap(\cS) \defeq \cS \setdiff \{\, d \in \cS \mid d = \false \text{ or } \exists d' \in \cS \st d \sentails d' \,\}. \]
+\form#432:$d \sentails d'$
+\form#433:$d \entails d' \land d \ne d'$
+\form#434:$\cS$
+\form#435:$\nonredmap(\cS)$
+\form#436:$\cS \neq \{ \false \}$
+\form#437:$D_{\smallP}$
+\form#438:$\mathord{\entailsP}$
+\form#439:$\cS_1$
+\form#440:$\cS_2 \in D_{\smallP}$
+\form#441:$\cS_1 \entailsP \cS_2$
+\form#442:\[ \forall d_1 \in \cS_1 \itc \exists d_2 \in \cS_2 \st d_1 \entails d_2. \]
+\form#443:$\{\true\}$
+\form#444:$ \nonredmap \bigl( \{\, d_1 \meet d_2 \mid d_1 \in \cS_1, d_2 \in \cS_2 \,\} \bigr) $
+\form#445:$\nonredmap(\cS_1 \union \cS_2)$
+\form#446:$\cS \in D_{\smallP}$
+\form#447:$d \in D$
+\form#448:$\nonredmap\bigl(\cS \union \{d\}\bigr)$
+\form#449:$\cS_1 = \{ d_1, \ldots, d_m \}$
+\form#450:$\cS_2 = \{ c_1, \ldots, c_n \}$
+\form#451:$\cS = \{ s_1, \ldots, s_q \}$
+\form#452:$\cS_2$
+\form#453:$q \leq m$
+\form#454:$s_k \in \cS$
+\form#455:$d_i \in \cS_1$
+\form#456:$c_j \in \cS_2$
+\form#457:$s_k$
+\form#458:$d_i$
+\form#459:$c_j$
+\form#460:$\cS_1, \cS_2$
+\form#461:$\uplus$
+\form#462:$c, d$
+\form#463:$c \uplus d \neq c \union d$
+\form#464:$i+1$
+\form#465:\[ \sum_{i=0}^{n-1} a_i x_i + b \]
+\form#466:$x_i$
+\form#467:$4x - 2y - z + 14$
+\form#468:$3$
+\form#469:$1$
+\form#470:$2$
+\form#471:$\sum_{i=0}^{n-1} a_i x_i + b = 0$
+\form#472:$\sum_{i=0}^{n-1} a_i x_i + b \geq 0$
+\form#473:$\sum_{i=0}^{n-1} a_i x_i + b > 0$
+\form#474:$3x + 5y - z = 0$
+\form#475:$4x \geq 2y - 13$
+\form#476:$4x > 2y - 13$
+\form#477:$x - 5y + 3z \leq 4$
+\form#478:$x - 5y + 3z > 4$
+\form#479:$x$
+\form#480:$(0, 1)^\transpose \in \Rset^2$
+\form#481:\[ \bigl\{\, (x, 0)^\transpose \in \Rset^2 \bigm| x \geq 0 \,\bigr\}, \]
+\form#482:$\vect{l} = (a_0, \ldots, a_{n-1})^\transpose$
+\form#483:$\vect{r} = (a_0, \ldots, a_{n-1})^\transpose$
+\form#484:$\vect{p} = (\frac{a_0}{d}, \ldots, \frac{a_{n-1}}{d})^\transpose$
+\form#485:$\vect{c} = (\frac{a_0}{d}, \ldots, \frac{a_{n-1}}{d})^\transpose$
+\form#486:$d > 0$
+\form#487:$x-y-z$
+\form#488:$\vect{p} = (1, 0, 2)^\transpose \in \Rset^3$
+\form#489:$\vect{0} \in \Rset^3$
+\form#490:$\vect{0} \in \Rset^2$
+\form#491:$\vect{0} \in \Rset^0$
+\form#492:$\vect{p}$
+\form#493:$\vect{q} = (-1.5, 3.2, 2.1)^\transpose \in \Rset^3$
+\form#494:$\vect{c} = (1, 0, 2)^\transpose \in \Rset^3$
+\form#495:$(a_0, \ldots, a_{n-1})^\transpose$
+\form#496:$(a_0, 2 a_1, \ldots, (i+1)a_i, \ldots, n a_{n-1})^\transpose$
+\form#497:$x + y = 1 \pmod{2}$
+\form#498:$\Zset^2$
+\form#499:$\cg = \sum_{i=0}^{n-1} a_i x_i + b = 0 \pmod m$
+\form#500:$m \neq 0$
+\form#501:$\pmod{1}$
+\form#502:$4x = 2y - 13 \pmod{1}$
+\form#503:$4x = 2y - 13 \pmod{2}$
+\form#504:$x - 5y + 3z = 4 \pmod{5}$
+\form#505:$2 e$
+\form#506:$2x - 10y + 6z = 8 \pmod{5}$
+\form#507:\[ \bigl\{\, (x, 0)^\transpose \in \Rset^2 \bigm| x \pmod{1}\ 0 \,\bigr\}, \]
+\form#508:$x + y = 2$
+\form#509:$\vect{q} = (\frac{a_0}{d}, \ldots, \frac{a_{n-1}}{d})^\transpose$
+\form#510:$\vect{p} = (1, -1, -1)^\transpose \in \Rset^3$
+\form#511:$\vect{p1} = (-1.5, 3.2, 2.1)^\transpose \in \Rset^3$
+\form#512:$\vect{q} = (1, 0, 2)^\transpose \in \Rset^3$
+\form#513:$R^0$
+\form#514:$\{ 2 \} \sseq \Rset$
+\form#515:\[ \bigl\{\, (2, y)^\transpose \in \Rset^2 \bigm| y \in \Rset \,\bigr\}. \]
+\form#516:$\bigl\{ (2, 0)^\transpose \bigr\} \sseq \Rset^2$
+\form#517:$x+4$
+\form#518:$x+y$
+\form#519:$x-y$
+\form#520:$\bigl\{ (3, 2)^\transpose \bigr\} \sseq \Rset^2$
+\form#521:$\bigl\{(3, 0)^\transpose \bigr\} \sseq \Rset^2$
+\form#522:$w$
+\form#523:$x+3$
+\form#524:$(x, y)$
+\form#525:$x=y$
+\form#526:$x=-y$
+\form#527:$\pm x_i \leq k$
+\form#528:$x_i - x_j \leq k$
+\form#529:$+\infty$
+\form#530:\[ a_i x_i - a_j x_j \relsym b \]
+\form#531:$\mathord{\relsym} \in \{ \leq, =, \geq \}$
+\form#532:$a_j$
+\form#533:$a_i = 0$
+\form#534:$a_j = 0$
+\form#535:$a_i = a_j$
+\form#536:$3x - 3y \leq 1$
+\form#537:$x - y \leq 1$
+\form#538:$x - y \leq \frac{1}{3}$
+\form#539:$x - y \leq k$
+\form#540:$k > \frac{1}{3}$
+\form#541:$\frac{1}{3}$
+\form#542:$3x - y \leq 1$
+\form#543:$\Rset^3$
+\form#544:\[ ax_i + bx_j \leq k \]
+\form#545:$a, b \in \{-1, 0, 1\}$
+\form#546:\[ \pm a_i x_i \pm a_j x_j \relsym b \]
+\form#547:$3x + 3y \leq 1$
+\form#548:$x + y \leq 1$
+\form#549:$x + y \leq \frac{1}{3}$
+\form#550:$x + y \leq k$
+\form#551:$D_1$
+\form#552:$D_2$
+\form#553:$\fund{\gamma_1}{D_1}{\Rset^n}$
+\form#554:$\fund{\gamma_2}{D_2}{\Rset^n}$
+\form#555:$D = D_1 \times D_2$
+\form#556:$\fund{\gamma}{D}{\Rset^n}$
+\form#557:$d = (d_1, d_2) \in D$
+\form#558:\[ \gamma(d) = \gamma_1(d_1) \inters \gamma_2(d_2). \]
+\form#559:$d = (G, P) \in (\Gset \times \Pset)$
+\form#560:$G$
+\form#561:$-\infty$
+\form#562:$0$
+\form#563:$15 \cdot 10^2 = 1500$
+\form#564:$5$
+\form#565:$3/580000$
+\form#566:$713/10$
+\form#567:$-1929/15625$
+\form#568:$11/50$
+\form#569:$-220001/100$
+\form#570:$35$
+\form#571:$44027$
+\form#572:$7/2$
+\form#573:$2000$
+\form#574:$1024$
+\form#575:$1088$
+\form#576:$9073863231288$
+\form#577:$17/8$
+\form#578:$482$
+\form#579:$256$
+\form#580:$\epsilon$
+\form#581:$a_n$
+\form#582:$c = \bigl(\sum_{i=0}^{n-1} a_i x_i + b \relsym 0\bigr)$
+\form#583:$\sum_{i=0}^{n-1} a_i x_i + b$
+\form#584:$g = (\frac{a_0}{d}, \ldots, \frac{a_{n-1}}{d})^\transpose$
+\form#585:$d = 1$
+\form#586:$\sum_{i=0}^{n-1} a_i x_i$
+\form#587:$cg = \bigl(\sum_{i=0}^{n-1} a_i x_i + b = 0 \pmod{m}\bigr)$
+\form#588:$r \times c$
+\form#589:$M$
+\form#590:$(r+n) \times c$
+\form#591:$\genfrac{(}{)}{0pt}{}{M}{0}$
+\form#592:$r \times (c+n)$
+\form#593:$(M \, 0)$
+\form#594:$(r+n) \times (c+m)$
+\form#595:$\bigl(\genfrac{}{}{0pt}{}{M}{0} \genfrac{}{}{0pt}{}{0}{0}\bigr)$
+\form#596:$(r+1) \times c$
+\form#597:$\times$
+\form#598:$M \in \Rset^r \times \Rset^c$
+\form#599:$N \in \Rset^{r+n} \times \Rset^{c+n}$
+\form#600:$N = \bigl(\genfrac{}{}{0pt}{}{0}{M}\genfrac{}{}{0pt}{}{J}{o}\bigr)$
+\form#601:$n \times n$
+\form#602:$\sum_{i = 0}^{n - 1} a_i x_i + b$
+\form#603:${a'}_{ij}$
+\form#604:$a_{ij}$
+\form#605:\[ {a'}_{ij} = \begin{cases} a_{ij} * \mathrm{denominator} + a_{iv} * \mathrm{expr}[j] \quad \text{for } j \neq v; \\ \mathrm{expr}[v] * a_{iv} \quad \text{for } j = v. \end{cases} \]
+\form#606:$0 \leq 1$
+\form#607:$\sum_{i=0}^{n-1} 0 x_i + 0 = 0$
+\form#608:$\sum_{i=0}^{n-1} 0 x_i + b \geq 0$
+\form#609:$b \geq 0$
+\form#610:$\sum_{i=0}^{n-1} 0 x_i + b > 0$
+\form#611:$b > 0$
+\form#612:$\sum_{i=0}^{n-1} 0 x_i + b = 0$
+\form#613:$b \neq 0$
+\form#614:$b < 0$
+\form#615:$b \leq 0$
+\form#616:$\epsilon \geq 0$
+\form#617:$\epsilon \leq 1$
+\form#618:\[ \frac{\sum_{i = 0}^{n - 1} a_i x_i + b} {\mathrm{denominator}}. \]
+\form#619:$L_\infty$
+\form#620:$ e_1 = e_2 $
+\form#621:$ e_1 = e_2 \pmod{0}$
+\form#622:$(r+dims) \times (c+dims)$
+\form#623:$\bigl(\genfrac{}{}{0pt}{}{0}{A} \genfrac{}{}{0pt}{}{B}{A}\bigr)$
+\form#624:$B$
+\form#625:$dims \times dims$
+\form#626:$\bigl(\genfrac{}{}{0pt}{}{0}{1} \genfrac{}{}{0pt}{}{1}{0}\bigr)$
+\form#627:$e1 = e2 \pmod{1}$
+\form#628:$e = n \pmod{1}$
+\form#629:$ e_1 = e_2 \pmod{m}$
+\form#630:$ e_1 = e_2 \pmod{mk}$
+\form#631:$\sum_{i=0}^{n-1} 0 x_i + 0 == 0$
+\form#632:$\sum_{i=0}^{n-1} 0 x_i + b \%= 0 / m$
+\form#633:$b = 0 \pmod{m}$
+\form#634:$\sum_{i=0}^{n-1} 0 x_i + b == 0$
+\form#635:$b \neq 0 \pmod{m}$
+\form#636:$0 = 1 \pmod{1}$
+\form#637:$0 = 1 \pmod{0}$
+\form#638:$n = e \pmod{1}$
+\form#639:$\bigl(\genfrac{}{}{0pt}{}{A}{0} \genfrac{}{}{0pt}{}{0}{B}\bigr)$
+\form#640:$\bigl(\genfrac{}{}{0pt}{}{1}{0} \genfrac{}{}{0pt}{}{0}{1}\bigr)$
+\form#641:$\mathrm{var}' \relsym \frac{\mathrm{expr}}{\mathrm{denominator}}$
+\form#642:$\mathrm{lhs}' \relsym \mathrm{rhs}$
+\form#643:$\frac{\mathrm{lb\_expr}}{\mathrm{denominator}} \leq \mathrm{var}' \leq \frac{\mathrm{ub\_expr}}{\mathrm{denominator}}$
+\form#644:\[ \bigl\{\, (x, y, z)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cP \,\bigr\}. \]
+\form#645:\[ \bigl\{\, (x, y, 0)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cP \,\bigr\}. \]
+\form#646:$f(k)$
+\form#647:$\dots$
+\form#648:$\Rset^0 = \{\cdot\}$
+\form#649:\[ \begin{cases} sat\_c[i][j] = 0, \quad \text{if } G[i] \cdot C^\mathrm{T}[j] = 0; \\ sat\_c[i][j] = 1, \quad \text{if } G[i] \cdot C^\mathrm{T}[j] > 0. \end{cases} \]
+\form#650:\[ \begin{cases} sat\_g[i][j] = 0, \quad \text{if } C[i] \cdot G^\mathrm{T}[j] = 0; \\ sat\_g[i][j] = 1, \quad \text{if } C[i] \cdot G^\mathrm{T}[j] > 0. \end{cases} \]
+\form#651:$[\mathrm{first}, \mathrm{last})$
+\form#652:$\frac{num}{den}$
+\form#653:$\frac{d_{j}}{\|\Delta x^{j} \|}$
+\form#654:\[ \|\Delta x^{j} \| = \left( 1+\sum_{i=1}^{m} \alpha_{ij}^2 \right)^{\frac{1}{2}}. \]
+\form#655:$\alpha$
+\form#656:$I$
+\form#657:$d$
+\form#658:$n/d$
+\form#659:$0/1$
+\form#660:$\mathrm{var}' = \frac{\mathrm{expr}}{\mathrm{denominator}} \pmod{\mathrm{modulus}}$
+\form#661:$\mathrm{lhs}' = \mathrm{rhs} \pmod{\mathrm{modulus}}$
+\form#662:\[ \bigl\{\, (x, y, z)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cL \,\bigr\}. \]
+\form#663:\[ \bigl\{\, (x, y, 0)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cL \,\bigr\}. \]
+\form#664:$\{3x \equiv_3 0, 4x + y \equiv_3 1\}$
+\form#665:$\{3x \equiv_3 0, x + y \equiv_3 1\}$
+\form#666:\[ \{\, a \in \mathtt{to} \mid \exists b \in \mathtt{x} \st a \mathrel{\mathtt{rel}} b \,\}. \]
+\form#667:\[ \{\, a \in \mathtt{to} \mid \forall b \in \mathtt{x} \itc a \mathrel{\mathtt{rel}} b \,\}. \]
+\form#668:$\mathtt{y} \Delta \mathtt{x}$
+\form#669:$\cB \sseq \Rset^2$
+\form#670:\[ \bigl\{\, (x, y, z)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cB \,\bigr\}. \]
+\form#671:\[ \bigl\{\, (x, y, 0)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cB \,\bigr\}. \]
+\form#672:$B \sseq \Rset^n$
+\form#673:$D \sseq \Rset^m$
+\form#674:$R \sseq \Rset^{n+m}$
+\form#675:\[ R \defeq \Bigl\{\, (x_1, \ldots, x_n, y_1, \ldots, y_m)^\transpose \Bigm| (x_1, \ldots, x_n)^\transpose \in B, (y_1, \ldots, y_m)^\transpose \in D \,\Bigl\}. \]
+\form#676:$\mathrm{var} \relsym \frac{\mathrm{expr}}{\mathrm{denominator}}$
+\form#677:$\cO \sseq \Rset^2$
+\form#678:\[ \bigl\{\, (x, y, z)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cO \,\bigr\}. \]
+\form#679:\[ \bigl\{\, (x, y, 0)^\transpose \in \Rset^3 \bigm| (x, y)^\transpose \in \cO \,\bigr\}. \]
+\form#680:$O(n^2)$
+\form#681:\[ \mathit{ps} = \bigl\{ \{ x \geq 0 \}, \{ x \leq 0 \} \bigr\}, \]
+\form#682:$\mathit{ps}$
+\form#683:$\cP \uplus \cQ \neq \cP \union \cQ$

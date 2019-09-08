@@ -1,0 +1,31 @@
+== Description
+This is an interface to the MS SAPI (Sound API) library.
+
+== Prerequisites
+The MS SAPI library, version 5.0 or later.  You can find out more at
+http://www.microsoft.com/speech.  The download now seems to be available
+at http://www.microsoft.com/downloads.  Just search for "sapi".
+
+Ruby 1.8.0 or later, though I recommend 1.8.2 or later due to bug fixes
+in the OLE library.
+
+== Installation
+=== Manual Installation
+ruby test\tc_sapi5.rb (optional)
+ruby install.rb
+
+=== Gem Remote Installation
+gem install win32-sapi
+
+=== Gem Local Installation
+ruby test\tc_sapi5.rb (optional)
+ruby win32-sapi.gemspec
+gem install win32-sapi-<version>-mswin32.gem
+
+== Notes
+This is a pure Ruby library that uses the Win32OLE package.
+
+== Documentation
+The SAPI documentation is far too extensive for me to inline here.  Please see
+the documentation that came with the SAPI SDK download.
+

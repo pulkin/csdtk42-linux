@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<profile>
+<softDir>
+chipgen/Modem2G</softDir>
+<project>
+8809 for [CT8851]</project>
+<mainScript>
+CoolWatcher/cwuser.rb</mainScript>
+<hardXmd>
+chipgen/Modem2G/toolpool/map/8809/8955_hard.xml</hardXmd>
+<softXmd>
+chipgen/Modem2G/toolpool/map/8809/8955_soft_pkg.xmd</softXmd>
+<chipDie>8955</chipDie>
+<defaultTfg>rbbase/common/plugins/tracesniffer3G/default.tfg</defaultTfg>
+<elfdumpSetting>chipgen/Modem2G/toolpool/map/elfdump/8955.xml</elfdumpSetting>
+<gdbExe>mips-gdb/bin/mips-elf-insight</gdbExe>
+<lastCfpForFlamulator></lastCfpForFlamulator>
+<lastCoolGDBConfiguration>rbbase/common/plugins/CoolGDB/profiles/8809_xcpu.cgdb</lastCoolGDBConfiguration>
+<lastFlashProgForFastpf>chipgen/Modem2G/toolpool/plugins/fastpf/flash_programmers/host_8955_flsh_spi32m_ramrun.lod</lastFlashProgForFastpf>
+<lastLodForDownload>/media/neucrack/data/main/projects/RDA_GPRS/GPRS_C_SDK/hex/oled/oled_B2112_debug.lod</lastLodForDownload>
+<lastLodForRomburn></lastLodForRomburn>
+<lastcomport>1</lastcomport>
+<pathToGDB>C:/CSDTK/cygwin/coolgdb/bin</pathToGDB>
+<pathToTraceDB>chipgen/Modem2G/toolpool/map/2gTraceDB</pathToTraceDB>
+<tracerSetting>rbbase/common/plugins/tracer/default2g.ini</tracerSetting>
+</profile>

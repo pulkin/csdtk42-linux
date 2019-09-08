@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p
+END
+flash_cmds.rb
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/flash_cmds.rb
+END
+rda5800.rb
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/rda5800.rb
+END
+target_executor.rb
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/target_executor.rb
+END
+hardware_versions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/hardware_versions.rb
+END
+trace_level.rb
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/trace_level.rb
+END
+vitac.rb
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/vitac.rb
+END
+base.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/base.rb
+END
+vitac_testset.lod
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/vitac_testset.lod
+END
+bist.rb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/bist.rb
+END
+vitac_test_results.lod
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/tools/!svn/ver/1491/CSDTK/cooltools/trunk/chipgen/Modem2G/toolpool/scripts/8809p/vitac_test_results.lod
+END

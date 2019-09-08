@@ -1,0 +1,37 @@
+<collection elfdump="8910">
+<sram title="sysram">
+   <base>0x83000000</base>
+   <size>0x80000</size>
+   <rom>sysram.bin</rom>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bbsram">
+   <base>0x40080000</base>
+   <size>0x20000</size>
+   <rom>bbsram.bin</rom>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="psram">
+   <base>0x80000000</base>
+   <size>0x900000</size>
+   <rom>psram.bin</rom>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bbrom">
+   <base>0x400A0000</base>
+   <size>0x28000</size>
+   <rom>bbrom.bin</rom>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="flash">
+   <base>0x80900000</base>
+   <size>0x800000</size>
+   <rom>flash.bin</rom>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+</collection>

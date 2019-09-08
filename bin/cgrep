@@ -1,0 +1,21 @@
+#!/bin/bash
+
+pattern=$1
+
+if [ `uname -s` == "SunOS" ];then
+    find="gfind"
+    grep="ggrep"
+else
+    find="find"
+    grep="grep"
+fi
+
+$find $2 $3 $4 $5   -name "*.[chS]*" \
+                    -not -path "*.svn*" \
+                    -not -path "*CVS*" \
+                    -not -path "*/doc/*" \
+                    -not -path "*/docfull/*" \
+                    -not -path "*.swp" \
+                    -not -path "*.swo" \
+                    -exec $grep  $6 -Hn "${pattern}" \{\} \;
+

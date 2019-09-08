@@ -1,0 +1,9 @@
+This is mingw32 in Ubuntu 6.06 (Dapper). The version should be close to the
+version used in CSDTK.
+
+http://old-releases.ubuntu.com/ubuntu/pool/universe/m/mingw32/mingw32_3.4.4.20050522.1-2_amd64.deb
+http://old-releases.ubuntu.com/ubuntu/pool/universe/m/mingw32-runtime/mingw32-runtime_3.8-1_all.deb
+http://old-releases.ubuntu.com/ubuntu/pool/universe/m/mingw32-binutils/mingw32-binutils_2.16.91-20050827.1-2_amd64.deb
+
+To avoid pollute system, it is suggested to unpack to /opt/mingw32_3.4.4, and
+add /opt/mingw32_3.4.4/usr/bin to PATH.

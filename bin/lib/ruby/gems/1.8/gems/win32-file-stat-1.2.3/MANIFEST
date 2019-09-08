@@ -1,0 +1,11 @@
+CHANGES
+README
+MANIFEST
+install.rb
+win32-file-stat.gemspec
+
+lib/win32/file/stat.rb
+
+test/sometestfile.exe
+test/sometestfile.txt
+test/tc_file_stat.rb

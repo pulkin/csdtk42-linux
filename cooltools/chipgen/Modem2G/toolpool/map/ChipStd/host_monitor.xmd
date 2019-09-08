@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+
+    <typedef name="HOST_MONITOR_EXECUTION_CONTEXT_T">
+        <reg name="cmd_type" protect="rw"/>
+        <reg name="pc" protect="rw"/>
+        <reg name="sp" protect="rw" />
+        <reg name="param" protect="rw"/>
+        <reg name="returned_value" protect="rw"/>
+    </typedef>
+
+    <typedef name="HOST_EXTENDED_HANDLER_T">
+        <reg name= "extended_command_handler" protect="rw"/>
+    </typedef>
+
+    <typedef name="HOST_MONITOR_CONTROL_T">
+        <instance name="execution_context" type="HOST_MONITOR_EXECUTION_CONTEXT_T"/>
+        <instance name="extended_handler"  type="HOST_EXTENDED_HANDLER_T"/>
+    </typedef>
+
+</archive>

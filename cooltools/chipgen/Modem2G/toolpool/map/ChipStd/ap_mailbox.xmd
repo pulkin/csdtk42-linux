@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+
+    <include file="../../../platform/chip/hal/include/hal_ap_mailbox.xmd"/>
+
+    <instance address="AP_MAILBOX_ADDRESS" name="ap_mailbox" type="HAL_AP_MBX"
+            category="Memory map">
+        <comment>
+            Modem-AP mailbox structure
+        </comment>
+    </instance>
+
+</archive>

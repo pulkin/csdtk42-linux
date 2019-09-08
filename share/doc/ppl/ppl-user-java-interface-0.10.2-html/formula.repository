@@ -1,0 +1,21 @@
+\form#0:$\cg = \sum_{i=0}^{n-1} a_i x_i + b = 0 \pmod{m}$
+\form#1:$n$
+\form#2:$a_i$
+\form#3:$x_i$
+\form#4:$b$
+\form#5:$m$
+\form#6:$m = 0$
+\form#7:$\cg$
+\form#8:$\sum_{i=0}^{n-1} a_i x_i + b = 0$
+\form#9:$m \neq 0$
+\form#10:$\mathtt{e1} = \mathtt{e2} \pmod{\mathtt{m}}$
+\form#11:$0$
+\form#12:$\frac{\mathrm{lb\_expr}}{\mathrm{denominator}} \leq \mathrm{var}' \leq \frac{\mathrm{ub\_expr}}{\mathrm{denominator}}$
+\form#13:$\mathrm{var}' \relsym \frac{\mathrm{expr}}{\mathrm{denominator}}$
+\form#14:$\mathord{\relsym}$
+\form#15:$\mathrm{lhs}' \relsym \mathrm{rhs}$
+\form#16:$\pm x \leq r$
+\form#17:$\pm x < r$
+\form#18:$r \in \Qset$
+\form#19:$\frac{num}{den}$
+\form#20:$k-1$

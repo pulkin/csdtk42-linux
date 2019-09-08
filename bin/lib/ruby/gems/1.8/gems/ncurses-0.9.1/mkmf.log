@@ -1,0 +1,52 @@
+have_header: checking for unistd.h... -------------------- no
+
+"cl -nologo -E -I. -Ic:/ruby/lib/ruby/1.8/i386-mswin32 -I.  -MD -Zi -O2b2xg- -G6 -g  conftest.c -P"
+Command line warning D4002 : ignoring unknown option '-g'
+conftest.c
+conftest.c(1) : fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+checked program was:
+/* begin */
+1: #include <unistd.h>
+/* end */
+
+--------------------
+
+have_header: checking for ncurses.h... -------------------- no
+
+"cl -nologo -E -I. -Ic:/ruby/lib/ruby/1.8/i386-mswin32 -I.  -MD -Zi -O2b2xg- -G6 -g  conftest.c -P"
+Command line warning D4002 : ignoring unknown option '-g'
+conftest.c
+conftest.c(1) : fatal error C1083: Cannot open include file: 'ncurses.h': No such file or directory
+checked program was:
+/* begin */
+1: #include <ncurses.h>
+/* end */
+
+--------------------
+
+have_header: checking for ncurses/curses.h... -------------------- no
+
+"cl -nologo -E -I. -Ic:/ruby/lib/ruby/1.8/i386-mswin32 -I.  -MD -Zi -O2b2xg- -G6 -g  conftest.c -P"
+Command line warning D4002 : ignoring unknown option '-g'
+conftest.c
+conftest.c(1) : fatal error C1083: Cannot open include file: 'ncurses/curses.h': No such file or directory
+checked program was:
+/* begin */
+1: #include <ncurses/curses.h>
+/* end */
+
+--------------------
+
+have_header: checking for curses.h... -------------------- no
+
+"cl -nologo -E -I. -Ic:/ruby/lib/ruby/1.8/i386-mswin32 -I.  -MD -Zi -O2b2xg- -G6 -g  conftest.c -P"
+Command line warning D4002 : ignoring unknown option '-g'
+conftest.c
+conftest.c(1) : fatal error C1083: Cannot open include file: 'curses.h': No such file or directory
+checked program was:
+/* begin */
+1: #include <curses.h>
+/* end */
+
+--------------------
+

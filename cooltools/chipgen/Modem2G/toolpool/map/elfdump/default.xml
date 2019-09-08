@@ -1,0 +1,64 @@
+<collection elfdump="8850e">
+<sram title="external sram">
+   <base>0x82c00000</base>
+   <size>0x400000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="ap sram">
+   <base>0x80100000</base>
+   <size>0x2000</size>
+   <skip>1</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="apmbx sram">
+   <base>0x818a0000</base>
+   <size>0x2000</size>
+   <skip>1</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="internal sram">
+   <base>0x81c00000</base>
+   <size>0x40000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bbmbx sram">
+   <base>0x818b8000</base>
+   <size>0x800</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bb sram">
+   <base>0x81980000</base>
+   <size>0x10000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bcpu rom">
+   <base>0x81e80000</base>
+   <size>0x28000</size>
+   <rom>bcpu_rom_chip.bin</rom>
+   <skip>9</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="internal rom">
+   <base>0x81e00000</base>
+   <size>0x5000</size>
+   <rom>mem_bridge_rom_chip.bin</rom>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="xcpu reg">
+   <base>0x81a17000</base>
+   <size>0x500</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bcpu reg">
+   <base>0x8190d000</base>
+   <size>0x500</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+</collection>

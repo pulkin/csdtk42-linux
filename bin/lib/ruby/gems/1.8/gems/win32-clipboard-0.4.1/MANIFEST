@@ -1,0 +1,11 @@
+MANIFEST
+CHANGES
+README
+install.rb
+win32-clipboard.gemspec
+
+examples/clipboard_test.rb
+
+lib/win32/clipboard.rb
+
+test/tc_clipboard.rb

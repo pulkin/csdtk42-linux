@@ -1,0 +1,12 @@
+table {
+page-break-inside:avoid;
+}
+
+.po {
+	display:none;
+}
+
+div.menu
+{
+	display:none;
+}

@@ -1,0 +1,27 @@
+ncurses-ruby-0.9:
+ * Forms wrapper contributed by Simon Kaczor
+ * ncurses-ruby now also works with ncurses-4.2
+   (an old release from 1998, needed for Zaurus-port)
+ * First binary package for Sharp Zaurus (arm-linux)
+
+ncurses-ruby-0.8:
+ * Bugfix: Calls into the ncurses library prior to calling
+   Ncurses::initscr or Ncurses::newterm had previously crashed
+   the Ruby interpreter.
+   Fixed by delaying the binding of most Ncurses functions
+   until after Ncurses::initscr or Ncurses::newterm have been
+   called.
+ * Replaced module functions with singleton functions. This
+   means that
+     include Ncurses
+     initscr
+   is no longer possible. Instead, use
+     Ncurses.initscr
+   Reasons: - Consistency. The shortcut has never been possible
+              with all ncurses functions.
+            - Namespace pollution. Some ncurses functions have
+              too common names.
+
+ncurses-ruby-0.7.2:
+ * reintroduced Ncurses::pechochar and Ncurses::redrawwin in the ncurses build.
+   These had been removed by mistake because they did not work with PDCurses.

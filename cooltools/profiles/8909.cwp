@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<profile>
+<softDir>
+chipgen/Modem2G</softDir>
+<project>
+8909</project>
+<mainScript>
+CoolWatcher/cwuser.rb</mainScript>
+<hardXmd>
+chipgen/Modem2G/toolpool/map/8909/8909_hard.xml</hardXmd>
+<softXmd>
+chipgen/Modem2G/toolpool/map/8909/8909_soft_pkg.xmd</softXmd>
+<defaultTfg>rbbase/common/plugins/tracesniffer3G/default.tfg</defaultTfg>
+<gdbExe>mips-gdb/bin/mips-elf-insight</gdbExe>
+<lastCfpForFlamulator></lastCfpForFlamulator>
+<lastCoolGDBConfiguration>rbbase/common/plugins/CoolGDB/profiles/8909_xcpu.cgdb</lastCoolGDBConfiguration>
+<lastFlashProgForFastpf>chipgen/Modem2G/toolpool/plugins/fastpf/flash_programmers/host_8909_flsh_spi32m_ramrun.lod</lastFlashProgForFastpf>
+<lastLodForDownload></lastLodForDownload>
+<lastLodForRomburn></lastLodForRomburn>
+<lastcomport>22</lastcomport>
+<chipDie>8909</chipDie>
+<defaultComBaud>921600</defaultComBaud>
+<pathToGDB>../cygwin/coolgdb/bin</pathToGDB>
+<pathToTraceDB>chipgen/Modem2G/toolpool/map/2gTraceDB</pathToTraceDB>
+<tracerSetting>rbbase/common/plugins/tracer/default2g.ini</tracerSetting>
+<elfdumpSetting>chipgen/Modem2G/toolpool/map/elfdump/8909.xml</elfdumpSetting>
+</profile>

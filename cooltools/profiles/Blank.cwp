@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<profile>
+<softDir>
+chipgen/Modem2G</softDir>
+<project>
+To Be Determined</project>
+<mainScript>
+CoolWatcher/cwblank.rb</mainScript>
+<hardXmd>
+</hardXmd>
+<softXmd>
+</softXmd>
+</profile>

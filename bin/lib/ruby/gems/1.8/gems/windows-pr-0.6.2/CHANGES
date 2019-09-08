@@ -1,0 +1,87 @@
+= 0.6.2 - 21-Dec-2006
+* Added file related constants from sys/stat.h to the Windows::MSVCRT::File
+  module.
+* Added the open_osfhandle method to the Windows::Handle module.
+* Changed the signatures for the VirtualFree and VirtualFreeEx functions in
+  the Windows::Memory module.
+* Added the Windows::GDI::Bitmap, Windows::GDI::DeviceContext and
+  Windows::GDI::PaintingDrawing modules.
+
+= 0.6.1 - 22-Nov-2006
+* Changed the signature for VirtualAlloc and VirtualAllocEx in the
+  Windows::Memory module (long instead of pointer for first argument).
+* Added the get_osfhandle method to the Windows::Handle module.
+
+= 0.6.0 - 5-Nov-2006
+* Added the Windows::Volume module.
+
+= 0.5.6 - 22-Oct-2006
+* Modified the memcpy method in Windows::MSVCRT::Buffer to do the right
+  thing based on the type of the parameters, as well as automatically
+  set the default size to the size of the source being copied.
+
+= 0.5.5 - 11-Oct-2006
+* Prototype modification for VirtualQuery and VirtualQueryEx in the
+  Windows::Memory module.
+
+= 0.5.4 - 8-Sep-2006
+* Added the Windows::NetworkManagement module, which contains methods like
+  NetUserAdd(), etc.
+* Fixed bugs in SetLastError and SetLastErrorEx declarations.
+* Finer grained method wrapping/checking for the Windows::Library module.
+* Finer grained method wrapping/checking for the Windows::Console module.
+* Added a test case for the Windows::Library module.
+* Added the LOCKFILE_EXCLUSIVE_LOCK and LOCKFILE_FAIL_IMMEDIATELY constants
+  to the Windows::File module.
+  
+= 0.5.3 - 10-Aug-2006
+* Added wide character functions to the EventLog module.
+* Added a test suite for the EventLog module.
+* Fixed method wrapper for MapViewOfFileEx.
+* Finer grained method wrapping/checking for the Windows::Registry module (the
+  RegSaveKeyEx might not be defined).
+
+= 0.5.2 - 29-Jul-2006
+* Prototype fixes/changes for CreateProcess, GlobalLock, GlobalMemoryStatusEx,
+  and CreateFileMapping.
+* Finer grained method wrapping/checking for the Windows::Process module (only
+  two methods might not be defined).
+* Added method wrappers for the Handle constants.
+* Added mmap related methods and constants.
+* Added more test cases.
+* Added wide character methods to the Windows::Directory class.
+* Added wide character helper methods.
+* Added a few more methods to MSVCRT::String. 
+
+= 0.5.1 - 26-May-2006
+* Minor updates and fixes for the Unicode and DeviceIO modules.
+* Added some wide character support, based on $KCODE values (which should
+  not be used at this time).
+
+= 0.5.0 - 23-May-2006
+* Added the Registry module
+* Added the EventLog module
+* Added the National module
+* Added the SystemInfo module
+
+= 0.4.0 - 7-May-2006
+* Bug fix for the WaitForMultipleObjects method in synchronize.rb
+* Added the Window module (just a few constants for now)
+* Added the Console module (AttachConsole, etc)
+* Added the Library module (LoadLibrary, etc)
+* Added the Directory module (CreateDirectory, etc)
+* Added the Shell module (some constants, a few methods for now)
+* Added the Unicode module (WideCharToMultiByte, etc)
+* Added process creation, priority and startf flags to the Process module
+
+= 0.3.0 - 22-Apr-2006
+* Added the Limits module.
+* Added the Security module.
+* Fixed a signature bug in the MSVCRT/Buffer module.
+
+= 0.2.0 - 13-Apr-2006
+* Added the FileSystem module.
+* Fixed signature and dll mistakes in the File module.
+
+= 0.1.0 - 4-Apr-2006
+* Initial release

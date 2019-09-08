@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<profile>
+<softDir>
+chipgen/Modem2G</softDir>
+<project>
+8808 for [CT8852,CT8853]</project>
+<mainScript>
+CoolWatcher/cwuser.rb</mainScript>
+<hardXmd>
+chipgen/Modem2G/toolpool/map/8808/8808_hard.xml</hardXmd>
+<softXmd>
+chipgen/Modem2G/toolpool/map/8808/8808_soft_pkg.xmd</softXmd>
+<defaultTfg>rbbase/common/plugins/tracesniffer/default.tfg</defaultTfg>
+<lastCfpForFlamulator></lastCfpForFlamulator>
+<lastCoolGDBConfiguration>rbbase/common/plugins/CoolGDB/profiles/8808_xcpu.cgdb</lastCoolGDBConfiguration>
+<lastFlashProgForFastpf>C:/host_8852_gh021_ramrun.lod</lastFlashProgForFastpf>
+<lastLodForDownload>C:/proto_dualsim_8852_gh021_debug_flash.lod</lastLodForDownload>
+<lastLodForRomburn>C:/int_rom_programmer_gallite_fpga_softrom_cool_profile/int_rom_programmer_gallite_fpga_softrom_cool_profile_introm.lod</lastLodForRomburn>
+<lastcomport>3</lastcomport>
+<pathToGDB>../cygwin/coolgdb/bin</pathToGDB>
+</profile>

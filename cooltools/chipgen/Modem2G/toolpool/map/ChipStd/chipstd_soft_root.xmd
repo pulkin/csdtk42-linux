@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+
+    <!-- This file describes the software memory map of the Modem 2G chips,
+         it is included by a CT_ASIC_soft_root.xmd file which will add the
+         variables needed by the XMD conditionnal includes. -->
+
+    <!-- Copy the global variables to local ones, for global variables
+         cannot be exported to ruby. -->
+    <typedef name="chipstd_globals" rubyconstants="yes"></typedef>
+    <var name="ChipHasAp" value="CHIP_HAS_AP"/>
+
+    <!-- To get the common types. -->
+    <include file="../../../platform/chip/hal/include/hal_map_engine.xmd"/>
+    <include file="cpu_error.xmd"/>
+    <include file="host_monitor.xmd"/>
+
+    <!-- To get the access type (MOD_MAP_ACCESS_T) of each modules. -->
+    <include file="../../../platform/chip/hal/include/hal_map.xmd"/>
+    <include file="../../../platform/calib/include/calib_map.xmd"/>
+    <include file="../../../platform_test/hal/gtes/include/gtes_map.xmd"/>
+    <include file="../../../platform/chip/pal/include/pal_map.xmd"/>
+    <include file="../../../platform/chip/bcpu/spal/include/spal_map.xmd"/>
+    <include file="../../../platform/chip/bcpu/spp/include/spp_map.xmd"/>
+    <include file="../../../platform/chip/bcpu/spc/include/spc_map.xmd"/>
+    <include file="../../../platform/edrv/rfd/include/rfd_map.xmd"/>   
+    <include file="../../../platform/edrv/memd/include/memd_map.xmd"/> 
+    <include file="../../../platform/edrv/pmd/include/pmd_map.xmd"/>   
+    <include file="../../../platform/edrv/lcdd/include/lcdd_map.xmd"/> 
+    <include file="../../../platform/stack/include/stack_map.xmd"/>
+    <include file="../../../platform/chip/boot/include/boot_map.xmd"/>
+
+    <include file="../../../platform/base/sx/include/sx_map.xmd"/>     
+    <include file="../../../platform/base/std/include/std_map.xmd"/>   
+    <include file="../../../platform/svc/ars/include/ars_map.xmd"/>   
+    <!-- SVC src is from Total_BJ branch
+    <include file="../../../platform/svc/uctls/src/uctlsp_map.xmd"/>   
+    <include file="../../../platform/svc/avps/src/avpsp_map.xmd"/>   
+    -->
+    <include file="../../../platform/svc/aps/include/aps_map.xmd"/> 
+    <include file="../../../platform/svc/vois/include/vois_map.xmd"/> 
+    <include file="../../../platform/stack/l1/include/l1_map.xmd"/> 
+    <include file="../../../toolpool/flash_programmer/flash_prog_map.xmd"/> 
+    <include file="../../../platform/csw/include/csw_map.xmd"/> 
+    <include file="../../../application/coolmmi/include/mmi_map.xmd" optional="yes"/> 
+    <include file="../../../platform/edrv/aud/include/aud_map.xmd"/> 
+    <include file="../../../platform/mdi/include/mdi_map.xmd" optional="yes"/> 
+    <include file="../../../platform/edrv/btd/include/btd_map.xmd" optional="yes"/> 
+
+    <include file="../../../at/include/at_map.xmd" optional="yes"/> 
+
+    <!-- Include to trigger the generation of all .h file generated from XMD -->
+    <include file="../../../platform/base/common/include/baseband_defs.xmd"/> 
+    <include file="../../../platform/base/sx/include/sx_task.xmd"/> 
+    <include file="../../../platform/chip/bcpu/spp/include/spp_gsm.xmd"/> 
+    <include file="../../../platform/chip/hal/include/hal_speech.xmd"/> 
+    <include file="../../../platform/chip/hal/include/hal_uart.xmd"/> 
+    <include file="../../../platform/chip/hal/include/hal_usb_descriptor_types.xmd"/> 
+    <include file="../../../platform/include/gfx_types.xmd"/> 
+    <include file="../../../platform/include/snd_types.xmd"/> 
+    <include file="../../../platform/vpp/include/vpp_map.xmd"/> 
+
+    <!-- Conditional includes -->
+    <include>
+        <comment>This conditionnal include triggers the use of VOC or not. The main purpose is too have a lighter XML, especially when loaded in CoolWatcher and all related tools.</comment>
+        <case cond="(USE_VOC_XMD == 1)" file="../../../platform/vpp/include/vpp_map.xcw"/>
+        <default                        file="no_voc.dummy" optional="yes"/>
+    </include>
+
+    <include>
+        <comment>
+            USB Structures and instants.
+            Driver variables and boot monitor context.
+        </comment>
+        <case cond="(CHIP_HAS_USB == 1)" file="usb_structures.xmd"/>
+        <default                         file="no_usb.dummy" optional="yes"/>
+    </include>
+
+    <include>
+        <comment>Modem-AP mailbox structures and instants</comment>
+        <case cond="(CHIP_HAS_AP == 1)" file="ap_mailbox.xmd"/>
+        <default                        file="no_ap.dummy" optional="yes"/>
+    </include>
+
+    <include>
+        <comment>XCPU-WCPU mailbox structures and instants</comment>
+        <case cond="(CHIP_HAS_WCPU == 1)" file="wd_mailbox.xmd"/>
+        <default                          file="no_wd.dummy" optional="yes"/>
+    </include>
+
+    <!-- Type used to access the version and the memory map of a soft module. -->
+    <!-- Must be compatible with the type HAL_MAP_ID_T of "hal_map_engine.xmd". -->
+    <typedef name="MAP_TABLE_T">
+        <comment>
+            Type used to access the version and the memory map of a soft module.
+            Must be compatible with the type HAL_MAP_ID_T of "hal_map_engine.xmd".
+        </comment>
+        <ptr name="hal_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="hal_access"     type="HAL_MAP_ACCESS_T"/>
+        <ptr name="pal_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="pal_access"     type="PAL_MAP_ACCESS_T"/>
+        <ptr name="spal_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="spal_access"    type="SPAL_MAP_ACCESS_T"/>
+        <ptr name="spp_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="spp_access"     type="SPP_MAP_ACCESS_T"/>
+        <ptr name="spc_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="spc_access"     type="SPC_MAP_ACCESS_T"/>
+        <ptr name="rfd_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="rfd_access"     type="RFD_MAP_ACCESS_T"/>
+        <ptr name="free1_version"  type="HAL_MAP_VERSION_T"/>
+        <ptr name="free1_access"   type="FREE1_MAP_ACCESS_T"/>
+        <ptr name="at_version"     type="HAL_MAP_VERSION_T"/>
+        <ptr name="at_access"      type="AT_MAP_ACCESS_T"/>
+        <ptr name="memd_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="memd_access"    type="MEMD_MAP_ACCESS_T"/>
+        <ptr name="pmd_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="pmd_access"     type="PMD_MAP_ACCESS_T"/>
+        <ptr name="stack_version"  type="HAL_MAP_VERSION_T"/>
+        <ptr name="stack_access"   type="STACK_MAP_ACCESS_T"/>
+        <ptr name="vpp_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="vpp_access"     type="VPP_MAP_ACCESS_T"/>
+        <ptr name="sx_version"     type="HAL_MAP_VERSION_T"/>
+        <ptr name="sx_access"      type="SX_MAP_ACCESS_T"/>
+        <ptr name="std_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="std_access"     type="STD_MAP_ACCESS_T"/>
+        <ptr name="lcdd_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="lcdd_access"    type="LCDD_MAP_ACCESS_T"/>
+        <ptr name="ars_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="ars_access"     type="ARS_MAP_ACCESS_T"/>
+	<!-- SVC src is from Total_BJ branch and APS is used instead of AVPS
+        <ptr name="avps_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="avps_access"    type="AVPS_MAP_ACCESS_T"/>
+	-->
+        <ptr name="aps_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="aps_access"     type="APS_MAP_ACCESS_T"/>
+        <ptr name="vois_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="vois_access"    type="VOIS_MAP_ACCESS_T"/>
+        <ptr name="calib_version"  type="HAL_MAP_VERSION_T"/>
+        <ptr name="calib_access"   type="CALIB_MAP_ACCESS_T"/>
+        <ptr name="gtes_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="gtes_access"    type="GTES_MAP_ACCESS_T"/>
+        <ptr name="flash_prog_version"   type="HAL_MAP_VERSION_T"/>
+        <ptr name="flash_prog_access"    type="FLASH_PROG_MAP_ACCESS_T"/>
+        <ptr name="csw_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="csw_access"     type="CSW_MAP_ACCESS_T"/>
+        <ptr name="mmi_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="mmi_access"     type="MMI_MAP_ACCESS_T"/>
+        <ptr name="aud_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="aud_access"     type="AUD_MAP_ACCESS_T"/>
+        <ptr name="mdi_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="mdi_access"     type="VOID"/>
+        <ptr name="btd_version"    type="HAL_MAP_VERSION_T"/>
+        <ptr name="btd_access"     type="BTD_MAP_ACCESS_T"/>
+	<!-- SVC src is from Total_BJ branch and UCTLS has no map info
+        <ptr name="uctls_version"  type="HAL_MAP_VERSION_T"/>
+        <ptr name="uctls_access"   type="UCTLS_MAP_ACCESS_T"/>
+	-->
+    </typedef>
+
+    <!-- Type of the fixed pointer for the map table. -->
+    <alias name="MAP_TABLE_PTR_T">
+        <ptr name="unused" type="MAP_TABLE_T">
+          <comment>
+            Type of the fixed pointer for the map table.
+          </comment>
+        </ptr>
+    </alias>
+
+    <!-- Fixed pointer to access the software memory map. -->
+    <instance address="MAP_TABLE_PTR_ADDRESS" name="map_table" type="MAP_TABLE_PTR_T"
+              category="Memory map">
+      <comment>
+        Fixed pointer to access the software memory map.
+      </comment>
+    </instance>
+
+    <!-- Structure to access the host monitor executor control context. -->
+    <instance address="HOST_MONITOR_CONTROL_ADDRESS" name="host_monitor_control" type="HOST_MONITOR_CONTROL_T"
+        category="Memory map">
+        <comment>
+            Structure to access the host monitor executor control context.
+        </comment>
+    </instance>
+
+    <!-- Type of the fixed pointer for the boot sector struct. -->
+    <alias name="BOOT_SECTOR_STRUCT_PTR_T">
+        <ptr name="unused" type="BOOT_SECTOR_STRUCT_T">
+          <comment>
+            Type of the fixed pointer for the boot sector struct.
+          </comment>
+        </ptr>
+    </alias>
+
+    <!-- Fixed pointer to access the boot sector EBC RAM context. -->
+    <instance address="BOOT_SECTOR_STRUCT_PTR_ADDRESS" name="boot_sector_struct_ptr" type="BOOT_SECTOR_STRUCT_PTR_T"
+        category="Memory map">
+        <comment>
+            Structure to access the boot sector EBC RAM context.
+        </comment>
+    </instance>
+
+    <!-- Structure to access the XCPU context, in case of crash only. -->
+    <instance address="XCPU_ERROR_INFO_ADDRESS" name="xcpu_error_info" type="CPU_ERROR_INFO_T"
+        category="Debug info">
+        <comment>
+            Structure to access the XCPU context, in case of crash only.
+        </comment>
+    </instance>
+
+    <!-- Structure to access the BCPU context, in case of crash only. -->
+    <instance address="BCPU_ERROR_INFO_ADDRESS" name="bcpu_error_info" type="CPU_ERROR_INFO_T"
+        category="Debug info">
+        <comment>
+            Structure to access the BCPU context, in case of crash only.
+        </comment>
+    </instance>
+
+    <!-- First word of the boot sector code. -->
+    <alias name='BOOT_SECTOR_CODE_T'>
+        <uint32 name='unused'>
+            <comment>Type of the boot sector code.</comment>
+        </uint32>
+    </alias>
+    <instance address="BOOT_SECTOR_CODE_ADDRESS" name="boot_sector_code" type="BOOT_SECTOR_CODE_T"
+        category="Memory map">
+        <comment>
+            First word of the boot sector code.
+            This does not take the magic tag into account.
+        </comment>
+    </instance>
+
+    <!-- Version of the ROMed code. -->
+    <alias name='ROM_VERSION_T'>
+        <uint32 name='unused'>
+            <comment>Type of the ROMed code version.</comment>
+        </uint32>
+    </alias>
+    <instance address="ROM_VERSION_ADDRESS" name="rom_version" type="ROM_VERSION_T"
+        category="Memory map">
+        <comment>
+            Version of the ROMed code.
+        </comment>
+    </instance>
+
+</archive>

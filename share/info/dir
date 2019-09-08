@@ -1,0 +1,66 @@
+这是文件 .../info/dir，它含有 Info 层次
+结构的最顶层节点，称为 (dir)Top。
+您第一次调用 Info 您将从该节点开始。
+
+File: dir,	Node: Top	这是 INFO 树的顶
+
+  这里 (the Directory node) 给出了主要主题的菜单。
+  输入“q”将退出，输入“?”将列举所有 Info 命令，输入
+  “d”将返回这里。输入“h”将给初次使用的用户一个摘要，
+  输入“mEmacs<Return>”将访问 Emacs 手册，等等。
+
+  在 Emacs中，您可以在菜单项目或交叉引用上点击鼠标右键以
+  选择它。
+
+* Menu:
+
+GNU libraries
+* gmp: (gmp).                   GNU Multiple Precision Arithmetic Library.
+
+Individual utilities
+* addr2line: (binutils)addr2line.               Convert addresses to file and 
+                                                  line.
+* ar: (binutils)ar.                             Create, modify, and extract 
+                                                  from archives.
+* c++filt: (binutils)c++filt.                   Filter to demangle encoded C++ 
+                                                  symbols.
+* cxxfilt: (binutils)c++filt.                   MS-DOS name for c++filt.
+* dlltool: (binutils)dlltool.                   Create files needed to build 
+                                                  and use DLLs.
+* nlmconv: (binutils)nlmconv.                   Converts object code into an 
+                                                  NLM.
+* nm: (binutils)nm.                             List symbols from object files.
+* objcopy: (binutils)objcopy.                   Copy and translate object 
+                                                  files.
+* objdump: (binutils)objdump.                   Display information from 
+                                                  object files.
+* ranlib: (binutils)ranlib.                     Generate index to archive 
+                                                  contents.
+* readelf: (binutils)readelf.                   Display the contents of ELF 
+                                                  format files.
+* size: (binutils)size.                         List section sizes and total 
+                                                  size.
+* strings: (binutils)strings.                   List printable strings from 
+                                                  files.
+* strip: (binutils)strip.                       Discard symbols.
+* windmc: (binutils)windmc.                     Generator for Windows message 
+                                                  resources.
+* windres: (binutils)windres.                   Manipulate Windows resources.
+
+Miscellaneous
+* As: (as).                     The GNU assembler.
+* Bfd: (bfd).                   The Binary File Descriptor library.
+* Gas: (as).                    The GNU assembler.
+* Ld: (ld).                     The GNU linker.
+
+Software development
+* Annotate: (annotate).         The obsolete annotation interface.
+* Binutils: (binutils).         The GNU binary utilities.
+* Gdb: (gdb).                   The GNU debugger.
+* Gdb-Internals: (gdbint).      The GNU debugger's internals.
+* Stabs: (stabs).               The "stabs" debugging information format.
+
+Software libraries
+* cloog: (cloog).               A loop generator for scanning polyhedra
+* mpfr: (mpfr).                 Multiple Precision Floating-Point Reliable 
+                                  Library.

@@ -1,0 +1,108 @@
+2018-03-12
+8909的trace增加了0xc9 log的解析；
+增加8909 U02 ramrun文件；（仅适用于U02芯片）
+
+2018-01-27
+增加对8909芯片的支持（支持文本方式的8909nb tracer; 有些功能，如校准，还不完善）；
+增加RegisterViewer工具；
+Register Watcher ：增加寄存器保存功能；
+GDB Laucher：增加xcpu-rom启动模式；
+增加xcvRead 和xcvWrite命令，用于死机后读写xcv寄存器；
+解决Tracer插件bug：loadSetting操作，选择的文件路径不能包含中文。
+
+2017-10-13
+8955支持双boot；
+解决tracer插件loadSetting时，文件不能包含中文路径的问题；
+更新8910 XML；
+
+2017-09-16
+解决部分tracer item解析/显示失败的问题
+
+2017-08-17
+修改bug2711 8955平台coolwatcher读写RF校准区异常；
+增加8809e2_calib2
+
+09-12-07
+*** CoolWatcher                 Fixed buggy multiprofiler plugin.
+*** CoolHost                    Implemented flow control options for linux.
+*   CoolHost                    Better USB management, automatic reconnection is always on.
+
+09-11-16
+*** CoolWatcher                 Added Keypad Plugin.
+*** CoolWatcher                 Stabilizing behaviour at open/close/reop of connections.
+**  CoolWatcher                 Various minor feature add (more beautiful r/w indicators, history save/restore at quit/load, trace tool search not displaying multiple times the same line).
+*** CoolProfile                 Integrated new disassembly browser for EXL.
+*** CoolRuby                    CMU functions go asynchronous.
+*** CoolHost/CoolHost Library   Deported event management into coolhost library to avoid unefficient and costy polling through tcp socket.
+*   CoolHost                    Added a raw uart mode.
+*** CoolRuby/CoolHost           Added more flow control modes (now we have XONXOFF/HardWare/None).
+**  CoolDisassembly             Beautified display of disassembly. Added some interaction.
+**  CoolRuby/Coolhost           Enhanced bypass connections.
+*** CoolWatcher                 Important bug fix in register watcher (would stall the tool, especially under linux).
+*** CoolXml                     Added an option to avoid the .h generation of an archive. Made the global variables passed on the command line prior on every redefinition.
+*** CoolWatcher                 Added multiprofiler plugin to profile in RAM or over Trace.
+*** CoolRuby                    Better target executor.
+*** CoolRuby                    Reset waits for the 0xFFFFFFFF event for Modem2G.
+*** CoolWatcher                 Separated burning of boot sector/rest of code.
+*** All Tools                   Added enhancements to do 2-wire download.
+*** All Tools                   Various important bug fixes.
+
+09-07-03
+*** Fastpf                      Recompiled flash programmers, especially CS2324 ones that were not working.
+*** DTK Linux                   Modified structure of DTKux so that the release can work (svn externals were contained into other externals).
+*** Toolpools                   Made all the toolpools externals of the cooltools directories point to the new SVN paths due to the architecture change.
+
+09-06-26
+*** CoolWatcher/CoolRuby        Big rewrite of the whole ruby API. Much cleaner, multithreadable without lags. Removed direct dependency from CoolWatcher to coolhost_library (done completely through coolruby).
+*   CoolWatcher/CoolRuby        Simplified the use of bypass connections on a coolhost in the Ruby API.
+*   JadeCoolHost                Some updates to make it work again.
+*   CoolWatcher                 Cleaner error messages.
+*   CoolWatcher                 Added a button system in the Register Watcher
+*   CoolWatcher                 Save/Restore of CoolWatcher GUI state at end/start of the tool.
+*   CoolWatcher                 New icon. 
+*** CoolDisassembly             Added this new lib to manage .dis file in CW as well as in CoolProfile.
+**  CoolWatcher                 Added a tutorial plugin.
+*   CoolWatcher                 Added hierarchical hierarchies in the component lists.
+**  CoolXml                     Enhanced .h generation.
+**  CoolXml                     Added externals.
+*** Fastpf                      Several bug fixes. 
+*** Fastpf                      Latest flash programmers including new boot sector mecanism (important for USB code upgrade and burst mode RAM).
+*** All tools                   All tools compile without warning.
+*** All tools                   Various bug fixes.                            
+
+09-04-06
+* Coolwatcher                   Cleaner exception print in CoolWatcher.
+* ramchecker.rb                 Made the ramchecker tool functional again.
+*** fastpf                      Added Host Transfer check when we get some data errors during fastpf.
+*** fastpf                      Added intensive verify to check if the RAM is well written during fastpf transfers.
+* romulib                       Potential bug fix (a flash image could not be deleted multiple times without crashing the lib).
+
+09-04-02
+* CoolWatcher Plugin system:    fixed for Mac OS X (only one plugin could be loaded at a time).
+*** CoolHost+coolhost_library:  stabilized, some sockets could be blocking in some very precise cases, and some data be lost.
+* CoolWatcher:                  enhanced the multi-line command parser.
+** CoolXml+CoolPkg:             removed the warnings at loading. Made lighter packages by removing VOC XMDs by default (all tools loading XMDs will run faster and with far less memory).
+*** CoolProfile:                first version supporting EXL.
+** CoolGDB:                     added configuration system.
+* UartRamrun:                   fixed and resurrected for Greenstone.
+*** FastPf verify:              Accelerated and enhanced verify technique.
+
+
+09-03-23
+** Added cwAboutToQuit function. Used this function to quit all coolhost linked to CW when quitting CW.
+* Ported all tools to QT4.5/QTCreator.
+*** Added FCS verify to fastpf.
+* CoolGDB write to target fixed.
+* Coolhost library bug fix on bypass installation TCP packet.
+* XONXOFF bug fixes for Nephrite.
+* CoolGDB address bug fixes for Nephrite.
+
+
+09-03-06
+
+* Hot FIX for the Ruby Function wrapping the romulator library function to FLAMulate files.
+* Added support for admux in the LOD file format, FLAMulator, and romulib.
+
+09-03-05
+
+* First official release.

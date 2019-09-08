@@ -1,0 +1,104 @@
+<collection elfdump="8809e2">
+<sram title="page reg">
+   <base>0x81a0c000</base>
+   <size>0x110</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="xcpu reg">
+   <base>0x81a2b000</base>
+   <size>0x500</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bcpu reg">
+   <base>0x8190a000</base>
+   <size>0x500</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="RFSPI reg">
+   <base>0x81a0e000</base>
+   <size>0x500</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="tcu reg">
+   <base>0x81a0f000</base>
+   <size>0x500</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="sys ctrl reg">
+   <base>0x81a00000</base>
+   <size>0x100</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="dma reg">
+   <base>0x81a08000</base>
+   <size>0x100</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="sys ifc reg">
+   <base>0x81a09000</base>
+   <size>0x100</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="voc ahb reg">
+   <base>0x81970000</base>
+   <size>0x100</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="voc sram">
+   <base>0x81940000</base>
+   <size>0x28000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="internal sram">
+   <base>0x81c00000</base>
+   <size>0x10000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bb sram">
+   <base>0x81980000</base>
+   <size>0x4000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="external sram">
+   <base>0x82000000</base>
+   <size>0x800000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="dual port sram">
+   <base>0x81b00000</base>
+   <size>0x800</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="internal rom">
+   <base>0x81e00000</base>
+   <size>0x5000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="bcpu rom">
+   <base>0x81e80000</base>
+   <size>0x18000</size>
+   <skip>0</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+<sram title="flash">
+   <base>0x88000000</base>
+   <size>0x400000</size>
+   <skip>1</skip>
+   <comments>"size in bytes"</comments>
+</sram>
+</collection>

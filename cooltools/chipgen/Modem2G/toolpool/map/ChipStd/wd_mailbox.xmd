@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+
+    <include file="../../../platform/chip/hal/include/hal_wd_mailbox.xmd"/>
+
+    <instance address="WD_MAILBOX_ADDRESS" name="wd_mailbox" type="WD_MAILBOX"
+            category="Memory map">
+        <comment>
+            XCPU-WCPU mailbox structure
+        </comment>
+    </instance>
+
+</archive>

@@ -1,0 +1,64 @@
+= Description
+A redefinition of the File::Stat class for MS Windows.
+
+= Prerequisites
+Ruby 1.8.0 or later.
+windows-pr 0.4.0 or later.
+
+= Installation, pure Ruby
+== Manual Installation
+ruby test/tc_file_stat.rb (optional)
+ruby install.rb
+   
+== Gem Installation
+=== Local
+ruby test/tc_file_stat.rb (Unix, optional)
+gem install win32-file-stat-<version>.gem
+=== Remote
+gem install win32-file-stat
+
+= Synopsis
+require 'win32/file/stat'
+
+stat = File::Stat.new('file.txt')
+stat.size
+stat.readonly?
+stat.hidden?
+
+= Differences between Ruby's File::Stat and this version:
+* The File::Stat#blksize method returns a meaningful value.
+* The File::Stat#blockdev method works more accurately.
+* The File::Stat#blocks method returns a meaningful value.
+* The File::Stat#dev method returns a drive letter, not a number.
+* The File::Stat#executable? method works properly.
+* The File::Stat#executable_real? returns the same value as
+  File::Stat#executable? (which now works properly).
+* The File::Stat#file? method works properly.
+* The File::Stat#ftype method works more accurately.
+* The File::Stat#pipe method works properly.
+* The File::Stat#size method handles file sizes greater than 2 gigabytes
+  correctly.
+* The File::Stat#socket method works more accurately.
+* Allows you to get file attributes specific to MS Windows, e.g. archive,
+  hidden, etc.
+* The pp (pretty print) output has been customized.
+  
+= Known issues or bugs
+None that I'm aware of. Please report any bugs you find on the project page
+at http://www.rubyforge.org/projects/win32utils.
+
+= Miscellaneous
+I had to require 'pp' explicitly in order to deal with the fact that pp.rb
+has a builtin pretty_print method for File::Stat.  If I didn't do this
+you would end up using the pretty_print in pp.rb, which would break.
+
+= License
+Ruby's
+
+= Warranty
+This package is provided "as is" and without any express or
+implied warranties, including, without limitation, the implied
+warranties of merchantability and fitness for a particular purpose.
+
+= Author
+Daniel J. Berger

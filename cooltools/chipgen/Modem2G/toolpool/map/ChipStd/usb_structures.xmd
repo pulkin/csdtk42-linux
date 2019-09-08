@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+
+    <include file="../../../platform/chip/boot/include/boot_usb_monitor.xmd"/> 
+
+    <alias name="BOOT_HOST_USB_MONITOR_VAR_PTR_T">
+      <ptr name="unused" type="BOOT_HOST_USB_MONITOR_VAR_T">
+        <comment>
+          Type of the USB Variables fixed pointer.
+        </comment>
+      </ptr>
+    </alias>
+
+    <instance address="BOOT_HOST_USB_MONITOR_VAR_PTR_ADDRESS" name="boot_usb_monitor"
+              type="BOOT_HOST_USB_MONITOR_VAR_PTR_T" category="Memory map"/>
+
+</archive>

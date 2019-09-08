@@ -1,0 +1,32 @@
+== 1.2.3 - 4-Nov-2006
+* Bug fix for file sizes over 4gb.
+
+== 1.2.2 - 13-May-2006
+* Yet another blksize bug fix.
+* Minor tweak to the pretty_print method with regards to handling nil values.
+* Bumped the minimum required windows-pr version to 0.4.0 in the gemspec.
+
+== 1.2.1 - 12-May-2006
+* Fixed a bug with regards to the block count where the constructor would die
+  with a FloatDomainError if the blksize returned 0 or nil.  It now defaults
+  to nil in that event.
+
+== 1.2.0 - 23-Apr-2006
+* Removed the attribute setters.  From now on this class provides readonly
+  methods.  Use the win32-file package for attribute setters.
+* Added the content_indexed? alias for the indexed? method.
+* Corresponding test suite changes.
+* Fixed the pp issue by writing a custom pretty_print method.
+
+== 1.1.0 - 15-Apr-2006
+* Added the chardev?, dev_major, dev_minor directory?, file?, executable?,
+  executable_real?, ftype, grpowned?, owned?, pipe?, readable?, readable_real?,
+  rdev_major, rdev_minor, setgid?, setuid?, size?, socket?, sticky?, symlink?,
+  writable?, writable_real? and zero? methods.  Note that not all of these
+  methods return meaningful values and were merely added to match the current
+  spec.  See documentation for details.
+* Added a VERSION constant.
+* Some optimization in the constructor.
+
+== 1.0.0 - 13-Apr-2006
+* Initial release

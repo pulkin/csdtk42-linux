@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+
+    <!-- Global variables helping to build the proper XMD, depending on
+         the chip specifications. -->
+    <var name="CHIP_ASIC_ID"                          value="6"  global="yes"/>
+    <var name="CHIP_EDGE_SUPPORTED"                   value="0"  global="yes"/>
+    <var name="SPC_IF_VER"                            value="3"  global="yes"/>
+    <var name="CHIP_HAS_AP"                           value="0"  global="yes"/>
+    <var name="CHIP_HAS_WCPU"                         value="0"  global="yes"/>
+    <var name="CHIP_HAS_USB"                          value="1"  global="yes"/>
+    <var name="CHIP_WITH_VOC"                         value="1"  global="yes"/>
+    <var name="CHIP_WITH_VOC_ROM"                     value="0"  global="yes"/>
+    <var name="ROM_VERSION_ADDRESS"                   value="0x81e13ff8" global="yes"/>
+    <var name="BOOT_SECTOR_CODE_ADDRESS"              value="0x82000010" global="yes"/>
+    <var name="XCPU_ERROR_INFO_ADDRESS"               value="0x81c000b8" global="yes"/>
+    <!-- This location depends on BBSRAM size and bcpu globals reserved size -->
+    <var name="BCPU_ERROR_INFO_ADDRESS"               value="0x81983270" global="yes"/>
+    <var name="MAP_TABLE_PTR_ADDRESS"                 value="0x81c0027c" global="yes"/>
+    <var name="HOST_MONITOR_CONTROL_ADDRESS"          value="0x81c000a0" global="yes"/>
+    <var name="BOOT_HOST_USB_MONITOR_VAR_PTR_ADDRESS" value="0x81e00ffc" global="yes"/>
+    <var name="BOOT_SECTOR_STRUCT_PTR_ADDRESS"        value="0x81c00278" global="yes"/>
+    <var name="USE_VOC_XMD"                           value="0"  global="yes"/>
+
+    <!-- To get the common types. -->
+    <include file="../ChipStd/chipstd_soft_root.xmd"/>
+
+</archive>
+

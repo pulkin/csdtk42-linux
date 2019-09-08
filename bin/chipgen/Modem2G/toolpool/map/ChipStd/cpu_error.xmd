@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive h="no" asm="no">
+    
+    <typedef name="ERROR_CTX_T" >
+        <reg name="zero" protect="r"/>
+        <reg name="at" protect="r"/>
+        <reg name="v0" protect="r"/>
+        <reg name="v1" protect="r"/>
+        <reg name="a0" protect="r"/>
+        <reg name="a1" protect="r"/>
+        <reg name="a2" protect="r"/>
+        <reg name="a3" protect="r"/>
+        <reg name="t0" protect="r"/>
+        <reg name="t1" protect="r"/>
+        <reg name="t2" protect="r"/>
+        <reg name="t3" protect="r"/>
+        <reg name="t4" protect="r"/>
+        <reg name="t5" protect="r"/>
+        <reg name="t6" protect="r"/>
+        <reg name="t7" protect="r"/>
+        <reg name="s0" protect="r"/>
+        <reg name="s1" protect="r"/>
+        <reg name="s2" protect="r"/>
+        <reg name="s3" protect="r"/>
+        <reg name="s4" protect="r"/>
+        <reg name="s5" protect="r"/>
+        <reg name="s6" protect="r"/>
+        <reg name="s7" protect="r"/>
+        <reg name="t8" protect="r"/>
+        <reg name="t9" protect="r"/>
+        <reg name="k0" protect="r"/>
+        <reg name="k1" protect="r"/>
+        <reg name="gp" protect="r"/>
+        <reg name="sp" protect="r"/>
+        <reg name="fp" protect="r"/>
+        <reg name="ra" protect="r"/>
+        <reg name="sr" protect="r"/>
+        <reg name="lo" protect="r"/>
+        <reg name="hi" protect="r"/>
+        <reg name="bad" protect="r"/>
+        <reg name="cause" protect="r">
+            <bits name="cp0_Cause_ExcCode" pos="5:2" access="r" rst="0">
+                <options>
+                    <option value="0" name="Int"><comment>Interrupt</comment></option>
+                    <option value="1" name="Mod"><comment>TLB modification exception</comment></option>
+                    <option value="2" name="TLBL"><comment>TLB exception (load or instruction fetch)</comment></option>
+                    <option value="3" name="TLBS"><comment>TLB exception (store)</comment></option>
+                    <option value="4" name="AdEL"><comment>Address error exception (load or instruction fetch)</comment></option>
+                    <option value="5" name="AdES"><comment>Address error exception (store)</comment></option>
+                    <option value="6" name="IBE"><comment>Bus error exception (instruction fetch)</comment></option>
+                    <option value="7" name="DBE"><comment>Bus error exception (data reference: load or store)</comment></option>
+                    <option value="8" name="Sys"><comment>Syscall exception</comment></option>
+                    <option value="9" name="Pb"><comment>Breakpoint exception</comment></option>
+                    <option value="10" name="Ri"><comment>Reserved instruction exception</comment></option>
+                    <option value="11" name="CpU"><comment>Coprocessor Unusable exception</comment></option>
+                    <option value="12" name="Ov"><comment>Arithmetic Overflow exception</comment></option>
+                    <default/>
+                    <mask/>
+                    <shift/>
+                </options>
+            </bits>
+            <bits name="cp0_Cause_IP_soft" pos="9:8" access="r" rst="0">
+                <comment>Theses interrupt lines are software interrupts (the cpu can write in the CP0 bits to trigger and clear them).
+                </comment>
+                <options>
+                    <default/>
+                    <mask/>
+                    <shift/>
+                </options>
+            </bits>
+            <bits name="cp0_Cause_IP_ext" pos="15:10" access="r" rst="0">
+                <comment>Theses interrupt lines maps to the hardware interrupt lines from the corresponding irq module.
+                </comment>
+                <options>
+                    <default/>
+                    <mask/>
+                    <shift/>
+                </options>
+            </bits>
+            <bitgroup name="cp0_Cause_IP">
+                <entry ref="cp0_Cause_IP_soft"/>
+                <entry ref="cp0_Cause_IP_ext"/>
+            </bitgroup>
+            <bits name="cp0_Cause_CE" pos="29:28" access="r" rst="0">
+                <comment>The Coprocessor Error (CE) field indicate the coprocessor unit number referenced when a Coprocessor Unusable exception is taken.
+                </comment>
+                <options>
+                    <default/>
+                    <mask/>
+                    <shift/>
+                </options>
+            </bits>
+            <bits name="cp0_Cause_BD" pos="31" access="r" rst="0">
+                <comment>The Branch Delay (BD) bit indicate whether the last exception was taken while executing in a branch delay slot.
+                </comment>
+                <options>
+                    <option value="0" name="Normal"/>
+                    <option value="1" name="Delay_slot"/>
+                    <mask/>
+                    <shift/>
+                </options>
+            </bits>
+        </reg>
+        <reg name="pc" protect="r"/>
+    </typedef>
+
+    <typedef name="CPU_ERROR_INFO_T">
+        <reg name="cpu_error_code" protect="r"/>
+        <reg name="cpu_error_status" protect="r"/>
+        <ptr name="cpu_sp_context" type="ERROR_CTX_T" />
+        <reg name="cpu_stack_base" protect="r"/>
+        <reg name="cpu_dbg_start" protect="r"/>
+        <reg name="cpu_dbg_end" protect="r"/>
+    </typedef>
+
+</archive>
